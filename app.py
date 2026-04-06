@@ -4,9 +4,7 @@ from psycopg2.extras import RealDictCursor
 
 app = Flask(__name__)
 
-# -----------------------------
-# Connexion PostgreSQL
-# -----------------------------
+
 conn = psycopg2.connect(
     dbname="tourisme_dw",
     user="postgres",
@@ -15,28 +13,24 @@ conn = psycopg2.connect(
     port="5432"
 )
 
-# -----------------------------
-# Ping endpoint
-# -----------------------------
+
 @app.route("/ping")
 def ping():
     return "pong"
 
-# -----------------------------
-# Endpoint : liste complète + filtres + pagination
-# -----------------------------
+
 @app.route("/hebergements", methods=["GET"])
 def get_hebergements():
     cursor = conn.cursor(cursor_factory=RealDictCursor)
 
-    # ----- Paramètres de filtrage -----
+    
     ville = request.args.get("ville")
     typologie = request.args.get("type")
     page = int(request.args.get("page", 1))
     per_page = int(request.args.get("per_page", 20))
     offset = (page - 1) * per_page
 
-    # ----- Construction dynamique de la requête -----
+    
     query = """
         SELECT h.id_hebergement, h.nom_commercial, h.site_internet,
                l.adresse, l.code_postal, l.commune,
@@ -59,7 +53,7 @@ def get_hebergements():
         query += " AND t.typologie ILIKE %s"
         params.append(f"%{typologie}%")
 
-    # ----- Pagination -----
+    
     query += " ORDER BY h.id_hebergement LIMIT %s OFFSET %s"
     params.extend([per_page, offset])
 
@@ -69,9 +63,7 @@ def get_hebergements():
 
     return jsonify(results)
 
-# -----------------------------
-# Endpoint : détail par ID
-# -----------------------------
+
 @app.route("/hebergements/<int:hebergement_id>", methods=["GET"])
 def get_hebergement(hebergement_id):
     cursor = conn.cursor(cursor_factory=RealDictCursor)
@@ -96,8 +88,6 @@ def get_hebergement(hebergement_id):
     else:
         return jsonify({"error": "Hébergement non trouvé"}), 404
 
-# -----------------------------
-# Lancement du serveur
-# -----------------------------
+
 if __name__ == "__main__":
     app.run(debug=True)
