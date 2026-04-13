@@ -1,0 +1,86 @@
+## Description des fichiers 
+
+### app.py
+
+Point d’entrée de l’application Flask.
+
+Ce fichier :
+
+* initialise l’application Flask
+* enregistre les routes (API)
+* permet de lancer le serveur
+
+---
+
+### routes.py
+
+Gestion des endpoints de l’API REST.
+
+Ce fichier :
+
+* définit les routes (`/hebergements`, `/hebergements/{id}`)
+* récupère les paramètres de requête (ville, type, pagination)
+* appelle les fonctions du service
+* retourne les réponses au format JSON
+
+---
+
+### hebergement_service.py
+
+Contient la logique métier et les requêtes SQL.
+
+Ce fichier :
+
+* interroge la base de données
+* applique les filtres (ville, type)
+* gère la pagination
+* retourne les données à l’API
+
+---
+
+### db.py
+
+Gestion de la connexion à la base de données PostgreSQL.
+
+Ce fichier :
+
+* centralise la connexion à la base
+* évite la duplication du code de connexion
+* est utilisé par les services
+
+---
+
+### schema.sql
+
+Script SQL de création du Data Warehouse.
+
+Ce fichier :
+
+* crée les tables (`hebergements`, `localisation`, `type_hebergement`, `classement`)
+* définit les clés primaires et étrangères
+* prépare la base pour les requêtes analytiques
+
+---
+
+### dw_loader.py
+
+Script de chargement des données.
+
+Ce fichier :
+
+* récupère les données depuis MongoDB
+* nettoie les données
+* insère les données dans PostgreSQL
+
+
+---
+
+### test_api.py
+
+Script de test de l’API.
+
+Ce fichier :
+
+* teste les endpoints (`/hebergements`, `/hebergements/{id}`)
+* vérifie que l’API répond correctement
+* permet de valider le bon fonctionnement global
