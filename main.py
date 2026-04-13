@@ -1,27 +1,27 @@
-import time
-from scrapping import download_data, ingest_raw_data
-import pandas as pd
-from pymongo import MongoClient
-from cleaning import apply_cleaning_rules, store_cleaned_data
-
+import os
+from scrapping import DataIngestor
+from cleaning import DataTransformer
 
 def run_pipeline():
-    file_path = download_data()
+    URL_STABLE = "https://www.data.gouv.fr/api/1/datasets/r/3ce290bf-07ec-4d63-b12b-d0496193a535"
+    DB_URI = os.getenv("MONGO_URI", "mongodb://admin:password@localhost:27017/")
     
-    if file_path and ingest_raw_data(file_path):
-        # 1. On récupère les données brutes depuis Mongo
-        client = MongoClient("mongodb://localhost:27017/")
-        raw_docs = list(client["tourisme_db"]["raw_hebergements"].find())
-        df_raw = pd.DataFrame(raw_docs)
+    ingestor = DataIngestor(db_uri=DB_URI)
+    transformer = DataTransformer(db_uri=DB_URI)
 
-        # 2. Nettoyage (Logique métier)
-        df_cleaned = apply_cleaning_rules(df_raw)
+    print("Demarrage du Pipeline ETL")
 
-        # 3. Stockage (Logique technique)
-        if store_cleaned_data(df_cleaned):
-            print("ETL Pipeline Success")
+    file_path = ingestor.download_data(URL_STABLE, "hebergements_classes.csv")
+    
+    if not file_path or not ingestor.save_to_raw_zone(file_path, "raw_hebergements"):
+        print("Erreur : Echec lors de l'ingestion des donnees brutes.")
+        return
+
+    if transformer.run_pipeline():
+        print("Succes : Transformation et stockage en base reussis.")
+        print("ETL Pipeline Success")
     else:
-        print("ETL Pipeline Failed")
+        print("Erreur : Echec lors de la transformation des donnees.")
 
 if __name__ == "__main__":
     run_pipeline()

@@ -1,59 +1,50 @@
+
 import requests
 import os
 import pandas as pd
 from pymongo import MongoClient
 
-URL_STABLE = "https://www.data.gouv.fr/api/1/datasets/r/3ce290bf-07ec-4d63-b12b-d0496193a535"
-DATA_LAKE_DIR = "data_lake"
+class DataIngestor:
+    def __init__(self, db_uri="mongodb://admin:password@localhost:27017/", db_name="tourisme_db"):
+        self.client = MongoClient(db_uri)
+        self.db = self.client[db_name]
+        self.data_lake_dir = "data_lake"
+        self._setup_storage()
 
-def download_data():
-   
-    if not os.path.exists(DATA_LAKE_DIR):
-        os.makedirs(DATA_LAKE_DIR)
-        print(f"Dossier cree : {DATA_LAKE_DIR}")
+    def _setup_storage(self):
+        if not os.path.exists(self.data_lake_dir):
+            os.makedirs(self.data_lake_dir)
 
-    file_path = os.path.join(DATA_LAKE_DIR, "hebergements_classes.csv")
-    
-   
-    print("Telechargement en cours depuis l'URL stable...")
-    
-    try:
-        
-        response = requests.get(URL_STABLE, stream=True, timeout=30)
-        
-        if response.status_code == 200:
+    def download_data(self, url, target_name):
+
+        file_path = os.path.join(self.data_lake_dir, target_name)
+        try:
+            response = requests.get(url, stream=True, timeout=20)
+            response.raise_for_status() 
+            
             with open(file_path, 'wb') as f:
-                for chunk in response.iter_content(chunk_size=8192):
+                for chunk in response.iter_content(chunk_size=1024*8):
                     f.write(chunk)
-            print(f"Succes : Fichier enregistre dans {file_path}")
-            
-          
-            taille = os.path.getsize(file_path) / (1024 * 1024)
-            print(f"Taille du fichier : {taille:.2f} Mo")
             return file_path
-        else:
-            print(f"Erreur de telechargement : Code {response.status_code}")
+        except Exception as e:
+            print(f"Erreur lors du téléchargement : {e}")
+            return None
+
+    def save_to_raw_zone(self, file_path, collection_name):
+
+        if not file_path or not os.path.exists(file_path):
+            print("Fichier source introuvable.")
+            return False
+
+        try:
+            df = pd.read_csv(file_path, sep=';', low_memory=False)
             
-    except Exception as e:
-        print(f"Une erreur est survenue : {e}")
-
-
-# MONGO_URI = os.getenv("MONGO_URI", "mongodb://admin:password@localhost:27017/")
-MONGO_URI = "mongodb://localhost:27017/"
-
-def ingest_raw_data(file_path):
-    try:
-        client = MongoClient(MONGO_URI)
-        db = client["tourisme_db"]
-        collection = db["raw_hebergements"]
-
-        df = pd.read_csv(file_path, sep=';', low_memory=False)
-        data_dict = df.to_dict("records")
-
-        collection.delete_many({}) 
-        collection.insert_many(data_dict)
-
-        return True
-    except Exception as e:
-        print(f"Error: {e}")
-        return False
+            collection = self.db[collection_name]
+            collection.delete_many({})
+            collection.insert_many(df.to_dict("records"))
+            
+            print(f"Ingestion réussie : {len(df)} lignes insérées.")
+            return True
+        except Exception as e:
+            print(f"Erreur lors de l'ingestion MongoDB : {e}")
+            return False

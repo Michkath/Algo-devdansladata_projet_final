@@ -12,7 +12,7 @@ conn = psycopg2.connect(
     user="postgres",
     password="root",
     host="localhost",
-    port="5432"
+    port="5433"
 )
 cursor = conn.cursor()
 
@@ -73,7 +73,7 @@ def get_or_create_classement(classement_val, date_classement, classement_proroge
     """, (classement_val, date_classement, proroge_bool))
     return cursor.fetchone()[0]
 
-
+print("Nombre de documents MongoDB :", collection.count_documents({}))
 for doc in collection.find():
     id_localisation = get_or_create_localisation(
         doc.get("ADRESSE", ""),

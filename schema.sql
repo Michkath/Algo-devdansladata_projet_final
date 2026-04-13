@@ -9,7 +9,7 @@ CREATE DATABASE tourisme_dw;
 -- ============================
 -- 2️. Table : localisation
 -- ============================
-CREATE TABLE localisation (
+CREATE TABLE IF NOT EXISTS localisation (
     id_localisation SERIAL PRIMARY KEY,
     adresse TEXT,
     code_postal VARCHAR(10),
@@ -19,18 +19,18 @@ CREATE TABLE localisation (
 -- ============================
 -- 3️. Table : type_hebergement
 -- ============================
-CREATE TABLE type_hebergement (
+CREATE TABLE IF NOT EXISTS type_hebergement (
     id_type_hebergement SERIAL PRIMARY KEY,
     typologie VARCHAR(100),
     categorie VARCHAR(100),
     type_sejour VARCHAR(100),
-    mention VARCHAR(100)
+    mention VARCHAR(50)
 );
 
 -- ============================
 -- 4️. Table : classement
 -- ============================
-CREATE TABLE classement (
+CREATE TABLE IF NOT EXISTS classement (
     id_classement SERIAL PRIMARY KEY,
     classement VARCHAR(50),
     date_classement DATE,
@@ -40,38 +40,22 @@ CREATE TABLE classement (
 -- ============================
 -- 5️. Table : hebergements (table principale)
 -- ============================
-CREATE TABLE hebergements (
+CREATE TABLE IF NOT EXISTS hebergements (
     id_hebergement SERIAL PRIMARY KEY,
+    
     nom_commercial TEXT,
     site_internet TEXT,
 
-    id_localisation INT,
-    id_type_hebergement INT,
-    id_classement INT,
+    id_localisation INT REFERENCES localisation(id_localisation),
+    id_type_hebergement INT REFERENCES type_hebergement(id_type_hebergement),
+    id_classement INT REFERENCES classement(id_classement),
 
     capacite_accueil INT,
     nombre_chambres INT,
     nombre_emplacements INT,
     nombre_unites INT,
-    nombre_logements INT,
-
-    -- 🔗 Clés étrangères
-    CONSTRAINT fk_localisation
-        FOREIGN KEY (id_localisation)
-        REFERENCES localisation(id_localisation)
-        ON DELETE CASCADE,
-
-    CONSTRAINT fk_type
-        FOREIGN KEY (id_type_hebergement)
-        REFERENCES type_hebergement(id_type_hebergement)
-        ON DELETE CASCADE,
-
-    CONSTRAINT fk_classement
-        FOREIGN KEY (id_classement)
-        REFERENCES classement(id_classement)
-        ON DELETE CASCADE
+    nombre_logements INT
 );
-
 -- ============================
 -- 6️. Index pour performances
 -- ============================

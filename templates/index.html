@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TourismeData — Hébergements Classés de France</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  /* ── TOKENS ── */
+  :root {
+    --ink: #0f0e0b;
+    --paper: #f5f0e8;
+    --cream: #ede7d7;
+    --gold: #b8922a;
+    --gold-light: #d4ac4a;
+    --rust: #8b3a2a;
+    --sage: #4a6741;
+    --muted: #7a7060;
+    --border: #d0c8b8;
+    --card-bg: #faf7f2;
+    --shadow: 0 2px 24px rgba(15,14,11,0.08);
+    --shadow-hover: 0 8px 40px rgba(15,14,11,0.14);
+    --radius: 3px;
+    --transition: 0.25s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ── BACKGROUND TEXTURE ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(ellipse 80% 60% at 20% 10%, rgba(184,146,42,0.06) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 80% 90%, rgba(74,103,65,0.05) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; position: relative; z-index: 1; }
+
+  /* ── HEADER ── */
+  header {
+    border-bottom: 1px solid var(--border);
+    background: rgba(245,240,232,0.92);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    text-decoration: none;
+  }
+
+  .logo-mark {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+  }
+
+  .logo-mark span { color: var(--gold); }
+
+  .logo-sub {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .header-nav { display: flex; align-items: center; gap: 1.5rem; }
+
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    font-size: 0.78rem;
+    color: var(--muted);
+    text-decoration: none;
+    transition: var(--transition);
+  }
+
+  .pill:hover { border-color: var(--gold); color: var(--gold); }
+  .pill .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--sage); flex-shrink: 0; }
+  .pill.api .dot { background: var(--gold); animation: pulse 2s infinite; }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+
+  /* ── HERO ── */
+  .hero {
+    padding: 5rem 0 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.8rem, 5vw, 4.2rem);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 400;
+  }
+
+  .hero-desc {
+    font-size: 1.05rem;
+    color: var(--muted);
+    line-height: 1.75;
+    max-width: 46ch;
+    margin-bottom: 2rem;
+  }
+
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.6rem;
+    border-radius: var(--radius);
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: var(--transition);
+  }
+
+  .btn-primary {
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  .btn-primary:hover { background: #2a2820; transform: translateY(-1px); box-shadow: var(--shadow-hover); }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--border);
+  }
+
+  .btn-outline:hover { border-color: var(--ink); }
+
+  /* ── STATS CARD (hero right) ── */
+  .stats-panel {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    animation: floatIn 0.8s ease both;
+  }
+
+  @keyframes floatIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .stat-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--cream);
+  }
+
+  .stat-row:last-child { border-bottom: none; }
+
+  .stat-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .icon-gold { background: rgba(184,146,42,0.1); }
+  .icon-sage { background: rgba(74,103,65,0.1); }
+  .icon-rust { background: rgba(139,58,42,0.1); }
+
+  .stat-info { flex: 1; }
+  .stat-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; }
+  .stat-value { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; line-height: 1.2; }
+  .stat-value.counting { color: var(--gold); }
+
+  .pipeline-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: rgba(74,103,65,0.08);
+    border-radius: 4px;
+    font-size: 0.78rem;
+    color: var(--sage);
+    font-weight: 500;
+  }
+
+  /* ── PIPELINE SECTION ── */
+  .section { padding: 4rem 0; }
+  .section-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  .pipeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .pipeline-step {
+    background: var(--card-bg);
+    padding: 2rem 1.5rem;
+    position: relative;
+    transition: var(--transition);
+    cursor: default;
+  }
+
+  .pipeline-step:hover { background: white; }
+  .pipeline-step:hover .step-num { color: var(--gold); }
+
+  .step-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--cream);
+    line-height: 1;
+    margin-bottom: 0.75rem;
+    transition: var(--transition);
+  }
+
+  .step-tech {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .step-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .step-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+
+  /* ── SEARCH / EXPLORER ── */
+  .explorer {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+
+  .explorer-header {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .explorer-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  .status-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.25rem 0.7rem;
+    border-radius: 50px;
+    font-size: 0.72rem;
+    font-weight: 500;
+  }
+
+  .status-chip.live { background: rgba(74,103,65,0.1); color: var(--sage); }
+  .status-chip.demo { background: rgba(184,146,42,0.1); color: var(--gold); }
+  .status-chip .dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
+
+  .search-bar {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .input-group { display: flex; flex-direction: column; gap: 0.35rem; flex: 1; min-width: 150px; }
+
+  .input-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  input[type="text"], select {
+    padding: 0.6rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--paper);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    color: var(--ink);
+    transition: var(--transition);
+    outline: none;
+  }
+
+  input[type="text"]:focus, select:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(184,146,42,0.1); }
+
+  .search-btn {
+    align-self: flex-end;
+    padding: 0.6rem 1.5rem;
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    border-radius: var(--radius);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    white-space: nowrap;
+  }
+
+  .search-btn:hover { background: #2a2820; }
+  .search-btn:active { transform: scale(0.98); }
+
+  /* ── RESULTS ── */
+  .results-area { padding: 0; }
+
+  .results-meta {
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+    color: var(--muted);
+    border-bottom: 1px solid var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .results-count strong { color: var(--ink); }
+
+  .results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1px;
+    background: var(--border);
+  }
+
+  .card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: var(--gold);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: var(--transition);
+  }
+
+  .card:hover { background: white; }
+  .card:hover::before { transform: scaleY(1); }
+
+  .card-type {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .stars { color: var(--gold); font-size: 0.75rem; letter-spacing: -0.05em; }
+
+  .card-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+  }
+
+  .card-meta { display: flex; flex-direction: column; gap: 0.3rem; }
+
+  .card-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+
+  .card-detail svg { opacity: 0.5; flex-shrink: 0; }
+
+  .card-footer {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card-capacity {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .card-capacity strong { color: var(--ink); font-size: 1rem; }
+
+  .card-link {
+    font-size: 0.75rem;
+    color: var(--gold);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: var(--transition);
+  }
+
+  .card-link:hover { color: var(--rust); }
+
+  /* ── LOADING / EMPTY ── */
+  .state-message {
+    padding: 4rem 2rem;
+    text-align: center;
+    color: var(--muted);
+    grid-column: 1/-1;
+  }
+
+  .state-message .big { font-family: 'Playfair Display', serif; font-size: 3rem; opacity: 0.15; margin-bottom: 0.5rem; }
+  .state-message p { font-size: 0.9rem; }
+
+  .loader {
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+    grid-column: 1/-1;
+  }
+
+  .spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border);
+    border-top-color: var(--gold);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── PAGINATION ── */
+  .pagination {
+    padding: 1.25rem 2rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.85rem;
+  }
+
+  .page-info { color: var(--muted); }
+
+  .page-controls { display: flex; gap: 0.5rem; }
+
+  .page-btn {
+    padding: 0.4rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: transparent;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--ink);
+  }
+
+  .page-btn:hover:not(:disabled) { border-color: var(--gold); color: var(--gold); }
+  .page-btn:disabled { opacity: 0.4; cursor: default; }
+  .page-btn.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+  /* ── MODAL ── */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15,14,11,0.6);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition);
+  }
+
+  .modal-overlay.open { opacity: 1; pointer-events: all; }
+
+  .modal {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 560px;
+    max-height: 90vh;
+    overflow-y: auto;
+    transform: translateY(20px);
+    transition: var(--transition);
+    box-shadow: 0 20px 60px rgba(15,14,11,0.2);
+  }
+
+  .modal-overlay.open .modal { transform: translateY(0); }
+
+  .modal-header {
+    padding: 1.75rem 2rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .modal-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .modal-close {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 1rem;
+    flex-shrink: 0;
+    transition: var(--transition);
+  }
+
+  .modal-close:hover { border-color: var(--ink); color: var(--ink); }
+
+  .modal-body { padding: 1.75rem 2rem; }
+
+  .modal-section { margin-bottom: 1.75rem; }
+  .modal-section:last-child { margin-bottom: 0; }
+
+  .modal-section-title {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+  }
+
+  .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+
+  .detail-item { display: flex; flex-direction: column; gap: 0.2rem; }
+  .detail-key { font-size: 0.75rem; color: var(--muted); }
+  .detail-val { font-size: 0.95rem; font-weight: 500; }
+  .detail-val.highlight { color: var(--gold); font-family: 'Playfair Display', serif; font-size: 1.1rem; }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  .badge-gold { background: rgba(184,146,42,0.12); color: var(--gold); }
+  .badge-sage { background: rgba(74,103,65,0.1); color: var(--sage); }
+  .badge-rust { background: rgba(139,58,42,0.1); color: var(--rust); }
+
+  /* ── API DOCS ── */
+  .api-section { margin-top: 2rem; }
+
+  .endpoint-card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  .endpoint-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.9rem 1.25rem;
+    background: var(--cream);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .method {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    background: var(--sage);
+    color: white;
+    flex-shrink: 0;
+  }
+
+  .endpoint-path {
+    font-family: monospace;
+    font-size: 0.88rem;
+    color: var(--ink);
+    flex: 1;
+  }
+
+  .endpoint-body { padding: 1.25rem; border-top: 1px solid var(--border); display: none; }
+  .endpoint-body.open { display: block; }
+
+  .endpoint-desc { font-size: 0.88rem; color: var(--muted); margin-bottom: 1rem; }
+
+  .params-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+
+  .params-table th {
+    text-align: left;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .params-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--cream); vertical-align: top; }
+  .params-table tr:last-child td { border-bottom: none; }
+  .params-table code { font-size: 0.85em; background: var(--cream); padding: 0.1rem 0.4rem; border-radius: 2px; }
+
+  .try-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    border-radius: var(--radius);
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: var(--transition);
+  }
+
+  .try-btn:hover { background: #2a2820; }
+
+  .code-block {
+    background: var(--ink);
+    color: #c8c0b0;
+    padding: 1rem;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.82rem;
+    overflow-x: auto;
+    margin-top: 0.75rem;
+    line-height: 1.6;
+  }
+
+  .code-block .key { color: var(--gold-light); }
+  .code-block .str { color: #9ac08a; }
+  .code-block .num { color: #ce9178; }
+  .code-block .bool { color: #569cd6; }
+
+  /* ── FOOTER ── */
+  footer {
+    margin-top: 4rem;
+    border-top: 1px solid var(--border);
+    padding: 2.5rem 0;
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-stack { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+  .tech-badge {
+    padding: 0.2rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    font-size: 0.72rem;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; gap: 2rem; }
+    .pipeline { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 640px) {
+    .hero { padding: 3rem 0 2.5rem; }
+    h1 { font-size: 2.2rem; }
+    .pipeline { grid-template-columns: 1fr; }
+    .search-bar { flex-direction: column; }
+    .results-grid { grid-template-columns: 1fr; }
+    .detail-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── ANIMATION UTILITIES ── */
+  .fade-in { animation: fadeIn 0.5s ease both; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+  .stagger > * { animation: fadeIn 0.4s ease both; }
+  .stagger > *:nth-child(1) { animation-delay: 0.05s; }
+  .stagger > *:nth-child(2) { animation-delay: 0.1s; }
+  .stagger > *:nth-child(3) { animation-delay: 0.15s; }
+  .stagger > *:nth-child(4) { animation-delay: 0.2s; }
+  .stagger > *:nth-child(5) { animation-delay: 0.25s; }
+  .stagger > *:nth-child(n+6) { animation-delay: 0.3s; }
+
+  /* Tabs */
+  .tabs { display: flex; border-bottom: 1px solid var(--border); margin-bottom: 2rem; }
+  .tab {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--muted);
+    border-bottom: 2px solid transparent;
+    transition: var(--transition);
+    margin-bottom: -1px;
+  }
+  .tab.active { color: var(--ink); border-bottom-color: var(--gold); }
+  .tab:hover:not(.active) { color: var(--ink); }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <div class="header-inner">
+      <a class="logo" href="#">
+        <span class="logo-mark">Tourisme<span>Data</span></span>
+        <span class="logo-sub">Hébergements Classés</span>
+      </a>
+      <nav class="header-nav">
+        <span class="pill api"><span class="dot"></span>API Flask active</span>
+        <span class="pill">Pipeline Data</span>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<main>
+<section class="container">
+  <div class="hero">
+    <div>
+      <div class="hero-eyebrow">Projet Data Engineering</div>
+      <h1>Hébergements<br>Classés de <em>France</em></h1>
+      <p class="hero-desc">
+        Plateforme d'exploration des hébergements touristiques classés — hôtels, campings, villages de vacances — alimentée par un pipeline data complet : scraping, nettoyage, MongoDB, Data Warehouse PostgreSQL et API REST Flask.
+      </p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" onclick="scrollToExplorer()">
+          ↓ Explorer les données
+        </button>
+        <button class="btn btn-outline" onclick="switchTab('api')">
+          Documentation API
+        </button>
+      </div>
+    </div>
+    <div class="stats-panel">
+      <div class="pipeline-badge">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="3" fill="#4a6741"/><circle cx="7" cy="7" r="6" stroke="#4a6741" stroke-width="1" opacity="0.4"/></svg>
+        Pipeline opérationnel
+      </div>
+      <div class="stat-row">
+        <div class="stat-icon icon-gold">🏨</div>
+        <div class="stat-info">
+          <div class="stat-label">Hébergements indexés</div>
+          <div class="stat-value counting" id="counter1">—</div>
+        </div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-icon icon-sage">📍</div>
+        <div class="stat-info">
+          <div class="stat-label">Communes couvertes</div>
+          <div class="stat-value">France entière</div>
+        </div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-icon icon-rust">⭐</div>
+        <div class="stat-info">
+          <div class="stat-label">Classements</div>
+          <div class="stat-value">1 à 5 étoiles</div>
+        </div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-icon icon-gold">🔌</div>
+        <div class="stat-info">
+          <div class="stat-label">Base URL de l'API</div>
+          <div class="stat-value" style="font-size:0.9rem;font-family:monospace">http://127.0.0.1:5000</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PIPELINE -->
+<section class="container section">
+  <div class="section-label">Architecture du pipeline</div>
+  <div class="pipeline">
+    <div class="pipeline-step">
+      <div class="step-num">01</div>
+      <div class="step-tech">Python · BeautifulSoup</div>
+      <div class="step-name">Scraping</div>
+      <div class="step-desc">Collecte brute des données hébergements depuis les sources officielles via <code>scrapping.py</code>.</div>
+    </div>
+    <div class="pipeline-step">
+      <div class="step-num">02</div>
+      <div class="step-tech">Python · Pandas</div>
+      <div class="step-name">Nettoyage</div>
+      <div class="step-desc">Normalisation, déduplication et validation des données dans <code>cleaning.py</code>. Stockage brut dans MongoDB.</div>
+    </div>
+    <div class="pipeline-step">
+      <div class="step-num">03</div>
+      <div class="step-tech">PostgreSQL · Star Schema</div>
+      <div class="step-name">Data Warehouse</div>
+      <div class="step-desc">Chargement dans un DW structuré (tables : hébergements, localisation, type, classement) via <code>dw_loader.py</code>.</div>
+    </div>
+    <div class="pipeline-step">
+      <div class="step-num">04</div>
+      <div class="step-tech">Flask · REST</div>
+      <div class="step-name">API REST</div>
+      <div class="step-desc">Exposition des données via endpoints filtrables, paginés et triables. Dockerisé avec <code>docker-compose</code>.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TABS -->
+<section class="container section" id="explorer-section">
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('explorer')" id="tab-explorer">🔍 Explorer les hébergements</div>
+    <div class="tab" onclick="switchTab('api')" id="tab-api">📄 Documentation API</div>
+    <div class="tab" onclick="switchTab('schema')" id="tab-schema">🗄️ Schéma BDD</div>
+  </div>
+
+  <!-- EXPLORER TAB -->
+  <div class="tab-panel active" id="panel-explorer">
+    <div class="explorer" id="explorer">
+      <div class="explorer-header">
+        <div class="explorer-title">Explorateur d'hébergements</div>
+        <span class="status-chip demo"><span class="dot"></span>Mode démonstration</span>
+      </div>
+      <div class="search-bar">
+        <div class="input-group">
+          <label class="input-label">Ville / Commune</label>
+          <input type="text" id="filter-ville" placeholder="ex: Paris, Lyon…">
+        </div>
+        <div class="input-group">
+          <label class="input-label">Type d'hébergement</label>
+          <select id="filter-type">
+            <option value="">Tous les types</option>
+            <option value="HÔTEL DE TOURISME">Hôtel de tourisme</option>
+            <option value="CAMPING">Camping</option>
+            <option value="RÉSIDENCE DE TOURISME">Résidence de tourisme</option>
+            <option value="VILLAGE DE VACANCES">Village de vacances</option>
+            <option value="MEUBLÉ DE TOURISME">Meublé de tourisme</option>
+            <option value="CHAMBRE D'HÔTES">Chambre d'hôtes</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label class="input-label">Classement</label>
+          <select id="filter-classement">
+            <option value="">Tous</option>
+            <option value="1 étoile">1 étoile</option>
+            <option value="2 étoiles">2 étoiles</option>
+            <option value="3 étoiles">3 étoiles</option>
+            <option value="4 étoiles">4 étoiles</option>
+            <option value="5 étoiles">5 étoiles</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label class="input-label">Par page</label>
+          <select id="filter-perpage">
+            <option value="12">12</option>
+            <option value="24">24</option>
+            <option value="48">48</option>
+          </select>
+        </div>
+        <button class="search-btn" onclick="searchHebergements(1)">Rechercher</button>
+      </div>
+      <div class="results-meta" id="results-meta" style="display:none">
+        <span class="results-count" id="results-count">—</span>
+        <span id="api-url-display" style="font-family:monospace;font-size:0.75rem;color:var(--muted)"></span>
+      </div>
+      <div class="results-grid stagger" id="results-grid">
+        <div class="state-message">
+          <div class="big">🏨</div>
+          <p>Utilisez les filtres ci-dessus pour explorer les hébergements.<br>
+          <small style="font-size:0.8em;opacity:0.7">Connectez l'API Flask sur <code>http://127.0.0.1:5000</code> pour des données réelles.</small></p>
+        </div>
+      </div>
+      <div class="pagination" id="pagination" style="display:none">
+        <span class="page-info" id="page-info"></span>
+        <div class="page-controls" id="page-controls"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- API DOCS TAB -->
+  <div class="tab-panel" id="panel-api">
+    <div class="api-section">
+      <p style="color:var(--muted);font-size:0.92rem;margin-bottom:1.5rem;line-height:1.7">
+        Base URL : <code style="background:var(--cream);padding:0.2rem 0.5rem;border-radius:3px">http://127.0.0.1:5000</code> — 
+        Démarrer avec <code style="background:var(--cream);padding:0.2rem 0.5rem;border-radius:3px">python app.py</code>
+      </p>
+
+      <!-- Ping -->
+      <div class="endpoint-card">
+        <div class="endpoint-header" onclick="toggleEndpoint(this)">
+          <span class="method" style="background:#4a6741">GET</span>
+          <span class="endpoint-path">/ping</span>
+          <span style="font-size:0.82rem;color:var(--muted);margin-left:auto">Test de santé du serveur</span>
+        </div>
+        <div class="endpoint-body">
+          <p class="endpoint-desc">Vérifie que le serveur Flask est opérationnel.</p>
+          <div class="code-block">
+{<br>
+&nbsp;&nbsp;<span class="key">"status"</span>: <span class="str">"ok"</span>,<br>
+&nbsp;&nbsp;<span class="key">"message"</span>: <span class="str">"pong"</span><br>
+}
+          </div>
+          <button class="try-btn" onclick="testPing()">▶ Tester</button>
+          <div id="ping-result"></div>
+        </div>
+      </div>
+
+      <!-- Liste -->
+      <div class="endpoint-card">
+        <div class="endpoint-header" onclick="toggleEndpoint(this)">
+          <span class="method" style="background:#4a6741">GET</span>
+          <span class="endpoint-path">/hebergements</span>
+          <span style="font-size:0.82rem;color:var(--muted);margin-left:auto">Liste paginée &amp; filtrable</span>
+        </div>
+        <div class="endpoint-body open">
+          <p class="endpoint-desc">Retourne la liste des hébergements avec support de filtres, pagination et tri.</p>
+          <table class="params-table">
+            <thead>
+              <tr><th>Paramètre</th><th>Type</th><th>Défaut</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>ville</code></td><td>string</td><td>—</td><td>Filtrer par commune (ex: <code>Paris</code>)</td></tr>
+              <tr><td><code>type</code></td><td>string</td><td>—</td><td>Type d'hébergement (ex: <code>Hôtel</code>)</td></tr>
+              <tr><td><code>page</code></td><td>int</td><td>1</td><td>Numéro de page</td></tr>
+              <tr><td><code>per_page</code></td><td>int</td><td>20</td><td>Éléments par page</td></tr>
+              <tr><td><code>sort_by</code></td><td>string</td><td>—</td><td>Champ de tri (ex: <code>nom_commercial</code>)</td></tr>
+              <tr><td><code>sort_order</code></td><td>string</td><td>asc</td><td><code>asc</code> ou <code>desc</code></td></tr>
+            </tbody>
+          </table>
+          <div class="code-block" style="margin-top:1rem">
+<span style="color:#569cd6">GET</span> /hebergements?ville=Paris&amp;type=Hôtel&amp;page=1&amp;per_page=10<br><br>
+{<br>
+&nbsp;&nbsp;<span class="key">"page"</span>: <span class="num">1</span>,<br>
+&nbsp;&nbsp;<span class="key">"per_page"</span>: <span class="num">10</span>,<br>
+&nbsp;&nbsp;<span class="key">"total"</span>: <span class="num">120</span>,<br>
+&nbsp;&nbsp;<span class="key">"hebergements"</span>: [ { ... } ]<br>
+}
+          </div>
+        </div>
+      </div>
+
+      <!-- Détail -->
+      <div class="endpoint-card">
+        <div class="endpoint-header" onclick="toggleEndpoint(this)">
+          <span class="method" style="background:#4a6741">GET</span>
+          <span class="endpoint-path">/hebergements/:id</span>
+          <span style="font-size:0.82rem;color:var(--muted);margin-left:auto">Détail par identifiant</span>
+        </div>
+        <div class="endpoint-body">
+          <p class="endpoint-desc">Retourne les informations complètes d'un hébergement par son identifiant unique.</p>
+          <div class="code-block">
+<span style="color:#569cd6">GET</span> /hebergements/1<br><br>
+{<br>
+&nbsp;&nbsp;<span class="key">"id"</span>: <span class="num">1</span>,<br>
+&nbsp;&nbsp;<span class="key">"nom_commercial"</span>: <span class="str">"Hotel Parisien"</span>,<br>
+&nbsp;&nbsp;<span class="key">"ville"</span>: <span class="str">"Paris"</span>,<br>
+&nbsp;&nbsp;<span class="key">"type_hebergement"</span>: <span class="str">"Hôtel"</span>,<br>
+&nbsp;&nbsp;<span class="key">"classement"</span>: <span class="str">"3 étoiles"</span>,<br>
+&nbsp;&nbsp;<span class="key">"capacite_accueil"</span>: <span class="num">50</span>,<br>
+&nbsp;&nbsp;<span class="key">"nombre_chambres"</span>: <span class="num">25</span>,<br>
+&nbsp;&nbsp;<span class="key">"classement_proroge"</span>: <span class="bool">false</span><br>
+}
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:1.5rem;padding:1.25rem;background:rgba(184,146,42,0.06);border:1px solid rgba(184,146,42,0.2);border-radius:6px;font-size:0.85rem;color:var(--muted)">
+        💡 <strong style="color:var(--ink)">Note :</strong> Les filtres <code>ville</code> et <code>type</code> sont insensibles à la casse (ILIKE). La pagination et le tri sont compatibles avec tous les filtres.
+      </div>
+    </div>
+  </div>
+
+  <!-- SCHEMA TAB -->
+  <div class="tab-panel" id="panel-schema">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;margin-bottom:2rem">
+
+      <div style="border:1px solid var(--border);border-radius:6px;overflow:hidden">
+        <div style="padding:0.75rem 1rem;background:rgba(184,146,42,0.1);border-bottom:1px solid var(--border);font-weight:600;font-size:0.88rem;display:flex;align-items:center;gap:0.5rem">
+          <span style="color:var(--gold)">◆</span> hebergements
+          <span style="margin-left:auto;font-size:0.7rem;color:var(--muted);font-weight:400">Table principale</span>
+        </div>
+        <div style="padding:0.75rem 1rem;font-size:0.8rem;font-family:monospace">
+          <div style="color:var(--gold);margin-bottom:0.4rem">id_hebergement <span style="color:var(--muted)">PK</span></div>
+          <div>nom_commercial</div><div>site_internet</div>
+          <div style="color:#569cd6;margin-top:0.4rem">id_localisation <span style="color:var(--muted)">FK</span></div>
+          <div style="color:#569cd6">id_type_hebergement <span style="color:var(--muted)">FK</span></div>
+          <div style="color:#569cd6">id_classement <span style="color:var(--muted)">FK</span></div>
+          <div>capacite_accueil</div><div>nombre_chambres</div>
+          <div>nombre_emplacements</div><div>nombre_unites</div><div>nombre_logements</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid var(--border);border-radius:6px;overflow:hidden">
+        <div style="padding:0.75rem 1rem;background:rgba(74,103,65,0.08);border-bottom:1px solid var(--border);font-weight:600;font-size:0.88rem;display:flex;align-items:center;gap:0.5rem">
+          <span style="color:var(--sage)">◆</span> localisation
+        </div>
+        <div style="padding:0.75rem 1rem;font-size:0.8rem;font-family:monospace">
+          <div style="color:var(--gold);margin-bottom:0.4rem">id_localisation <span style="color:var(--muted)">PK</span></div>
+          <div>adresse</div><div>code_postal</div><div>commune</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid var(--border);border-radius:6px;overflow:hidden">
+        <div style="padding:0.75rem 1rem;background:rgba(74,103,65,0.08);border-bottom:1px solid var(--border);font-weight:600;font-size:0.88rem;display:flex;align-items:center;gap:0.5rem">
+          <span style="color:var(--sage)">◆</span> type_hebergement
+        </div>
+        <div style="padding:0.75rem 1rem;font-size:0.8rem;font-family:monospace">
+          <div style="color:var(--gold);margin-bottom:0.4rem">id_type_hebergement <span style="color:var(--muted)">PK</span></div>
+          <div>typologie</div><div>categorie</div><div>type_sejour</div><div>mention</div>
+        </div>
+      </div>
+
+      <div style="border:1px solid var(--border);border-radius:6px;overflow:hidden">
+        <div style="padding:0.75rem 1rem;background:rgba(74,103,65,0.08);border-bottom:1px solid var(--border);font-weight:600;font-size:0.88rem;display:flex;align-items:center;gap:0.5rem">
+          <span style="color:var(--sage)">◆</span> classement
+        </div>
+        <div style="padding:0.75rem 1rem;font-size:0.8rem;font-family:monospace">
+          <div style="color:var(--gold);margin-bottom:0.4rem">id_classement <span style="color:var(--muted)">PK</span></div>
+          <div>classement</div><div>date_classement</div><div>classement_proroge</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="padding:1.25rem;background:var(--cream);border-radius:6px;font-size:0.85rem;color:var(--muted)">
+      <strong style="color:var(--ink)">Architecture Star Schema</strong> — La table <code>hebergements</code> est la table de faits centrale. Les tables <code>localisation</code>, <code>type_hebergement</code> et <code>classement</code> sont des dimensions. Des index sont créés sur <code>commune</code>, <code>typologie</code> et <code>classement</code> pour optimiser les performances des requêtes analytiques.
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- MODAL DÉTAIL -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="modal-title">—</div>
+      <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    </div>
+    <div class="modal-body" id="modal-body">
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span>Pipeline Data Engineering — Hébergements Touristiques Classés de France</span>
+      <div class="footer-stack">
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">MongoDB</span>
+        <span class="tech-badge">PostgreSQL</span>
+        <span class="tech-badge">Flask</span>
+        <span class="tech-badge">Docker</span>
+        <span class="tech-badge">REST API</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── DEMO DATA (simulates API responses when Flask is offline) ──
+const DEMO_DATA = [
+  { id:1, nom_commercial:"1924 HÔTEL", ville:"GRENOBLE", code_postal:"38000", type_hebergement:"HÔTEL DE TOURISME", classement:"3 étoiles", capacite_accueil:62, nombre_chambres:37, site_internet:"https://www.1924hotel.com/", classement_proroge:false, date_classement:"2023-06-19" },
+  { id:2, nom_commercial:"25HOURS HÔTEL TERMINUS NORD", ville:"PARIS", code_postal:"75010", type_hebergement:"HÔTEL DE TOURISME", classement:"4 étoiles", capacite_accueil:489, nombre_chambres:237, site_internet:"https://www.25hours-hotels.com/fr", classement_proroge:false, date_classement:"2021-10-20" },
+  { id:3, nom_commercial:"5 TERRES HÔTEL & SPA MGALLERY", ville:"BARR", code_postal:"67140", type_hebergement:"HÔTEL DE TOURISME", classement:"5 étoiles", capacite_accueil:54, nombre_chambres:27, site_internet:"https://5terres-hotel.fr/fr/", classement_proroge:false, date_classement:"2023-03-20" },
+  { id:4, nom_commercial:"6 VH HOTEL", ville:"PARIS", code_postal:"75116", type_hebergement:"HÔTEL DE TOURISME", classement:"4 étoiles", capacite_accueil:70, nombre_chambres:35, site_internet:"https://www.le6vhhotel.com/", classement_proroge:false, date_classement:"2025-02-18" },
+  { id:5, nom_commercial:"7HÔTEL & SPA", ville:"ILLKIRCH-GRAFFENSTADEN", code_postal:"67400", type_hebergement:"HÔTEL DE TOURISME", classement:"4 étoiles", capacite_accueil:288, nombre_chambres:137, site_internet:"https://7hotel.fr/", classement_proroge:false, date_classement:"2022-10-24" },
+  { id:6, nom_commercial:"9 HÔTEL BASTILLE LYON", ville:"PARIS", code_postal:"75012", type_hebergement:"HÔTEL DE TOURISME", classement:"3 étoiles", capacite_accueil:88, nombre_chambres:48, site_internet:"https://www.9-hotel-bastille-lyon.fr", classement_proroge:false, date_classement:"2024-12-23" },
+  { id:7, nom_commercial:"A MUCCHIATANA", ville:"VENZOLASCA", code_postal:"20215", type_hebergement:"VILLAGE DE VACANCES", classement:"3 étoiles", capacite_accueil:355, nombre_chambres:null, site_internet:"www.amucchiatana.corsica", classement_proroge:false, date_classement:"2026-03-19" },
+  { id:8, nom_commercial:"ABBAYE DE SAINTE CROIX", ville:"SALON-DE-PROVENCE", code_postal:"13300", type_hebergement:"HÔTEL DE TOURISME", classement:"4 étoiles", capacite_accueil:61, nombre_chambres:25, site_internet:"https://garrigae.fr/", classement_proroge:false, date_classement:"2022-11-09" },
+  { id:9, nom_commercial:"AC HOTEL BY MARRIOTT STRASBOURG", ville:"STRASBOURG", code_postal:"67000", type_hebergement:"HÔTEL DE TOURISME", classement:"4 étoiles", capacite_accueil:342, nombre_chambres:170, site_internet:"https://ac-strasbourg.naoshotel.com/", classement_proroge:false, date_classement:"2023-06-29" },
+  { id:10, nom_commercial:"ACADÉMIE HÔTEL", ville:"LYON", code_postal:"69005", type_hebergement:"HÔTEL DE TOURISME", classement:"4 étoiles", capacite_accueil:40, nombre_chambres:12, site_internet:"www.academie-hotel.com", classement_proroge:false, date_classement:"2024-04-24" },
+  { id:11, nom_commercial:"ACE HOTEL METZ", ville:"METZ", code_postal:"57000", type_hebergement:"HÔTEL DE TOURISME", classement:"3 étoiles", capacite_accueil:171, nombre_chambres:62, site_internet:"https://www.ace-hotel-metz.com/fr/", classement_proroge:false, date_classement:"2023-10-24" },
+  { id:12, nom_commercial:"ACCOSTAGE HÔTEL", ville:"LA ROCHELLE", code_postal:"17000", type_hebergement:"HÔTEL DE TOURISME", classement:"2 étoiles", capacite_accueil:32, nombre_chambres:15, site_internet:"https://www.accostage-hotel.fr/", classement_proroge:false, date_classement:"2022-03-28" },
+  { id:13, nom_commercial:"ABOR HOTEL", ville:"SAINT-PIERRE-DU-MONT", code_postal:"40280", type_hebergement:"HÔTEL DE TOURISME", classement:"3 étoiles", capacite_accueil:187, nombre_chambres:68, site_internet:"www.aborhotel.com", classement_proroge:false, date_classement:"2023-03-31" },
+  { id:14, nom_commercial:"A RENA D'ORU", ville:"COGGIA", code_postal:"20118", type_hebergement:"HÔTEL DE TOURISME", classement:"3 étoiles", capacite_accueil:76, nombre_chambres:36, site_internet:"https://www.arenadoru.com/", classement_proroge:false, date_classement:"2024-07-22" },
+  { id:15, nom_commercial:"ABELHA HÔTEL", ville:"BRIVE-LA-GAILLARDE", code_postal:"19100", type_hebergement:"HÔTEL DE TOURISME", classement:"2 étoiles", capacite_accueil:51, nombre_chambres:23, site_internet:"http://www.abelha.fr", classement_proroge:false, date_classement:"2023-03-27" },
+  { id:16, nom_commercial:"ACACIA HOTEL", ville:"PARIS", code_postal:"75011", type_hebergement:"HÔTEL DE TOURISME", classement:"1 étoile", capacite_accueil:58, nombre_chambres:24, site_internet:"http://www.acacia-hotel-paris.com", classement_proroge:false, date_classement:"2024-09-12" },
+  { id:17, nom_commercial:"ACE HOTEL CHATEAUROUX", ville:"DÉOLS", code_postal:"36130", type_hebergement:"HÔTEL DE TOURISME", classement:"3 étoiles", capacite_accueil:160, nombre_chambres:60, site_internet:"https://www.ace-hotel.com/fr/hotels/chateauroux/", classement_proroge:false, date_classement:"2024-12-03" },
+  { id:18, nom_commercial:"AC HÔTEL PARIS PORTE MAILLOT", ville:"PARIS", code_postal:"75017", type_hebergement:"HÔTEL DE TOURISME", classement:"4 étoiles", capacite_accueil:328, nombre_chambres:164, site_internet:"https://www.marriott.fr/", classement_proroge:false, date_classement:"2024-12-23" },
+];
+
+let currentPage = 1;
+let totalItems = 0;
+let perPage = 12;
+let apiMode = false; // switches to true if Flask API responds
+
+// ── STATE ──
+const state = { page: 1, perPage: 12, ville: '', type: '', classement: '' };
+
+// ── INIT ──
+window.addEventListener('DOMContentLoaded', () => {
+  animateCounter();
+  searchHebergements(1);
+});
+
+function animateCounter() {
+  const el = document.getElementById('counter1');
+  let n = 0;
+  const target = 18000;
+  const step = Math.ceil(target / 60);
+  const interval = setInterval(() => {
+    n = Math.min(n + step, target);
+    el.textContent = n.toLocaleString('fr-FR') + '+';
+    if (n >= target) clearInterval(interval);
+  }, 20);
+}
+
+// ── SEARCH ──
+async function searchHebergements(page) {
+  state.page = page;
+  state.ville = document.getElementById('filter-ville').value.trim();
+  state.type = document.getElementById('filter-type').value;
+  state.classement = document.getElementById('filter-classement').value;
+  state.perPage = parseInt(document.getElementById('filter-perpage').value);
+
+  const grid = document.getElementById('results-grid');
+  grid.innerHTML = '<div class="loader"><div class="spinner"></div> Chargement…</div>';
+
+  // Build URL
+  const params = new URLSearchParams({ page, per_page: state.perPage });
+  if (state.ville) params.set('ville', state.ville);
+  if (state.type) params.set('type', state.type);
+
+  const apiUrl = `http://127.0.0.1:5000/hebergements?${params}`;
+  document.getElementById('api-url-display').textContent = `GET /hebergements?${params}`;
+
+  let data;
+  try {
+    const res = await fetch(apiUrl, { signal: AbortSignal.timeout(2000) });
+    data = await res.json();
+    apiMode = true;
+  } catch {
+    apiMode = false;
+    data = getDemoData(state.ville, state.type, state.classement, page, state.perPage);
+  }
+
+  renderResults(data);
+}
+
+function getDemoData(ville, type, classement, page, perPage) {
+  let items = [...DEMO_DATA];
+  if (ville) items = items.filter(h => h.ville.toLowerCase().includes(ville.toLowerCase()));
+  if (type) items = items.filter(h => h.type_hebergement.toLowerCase().includes(type.toLowerCase()));
+  if (classement) items = items.filter(h => h.classement === classement);
+
+  const total = items.length;
+  const start = (page - 1) * perPage;
+  return { hebergements: items.slice(start, start + perPage), total, page, per_page: perPage, demo: true };
+}
+
+function renderResults(data) {
+  const grid = document.getElementById('results-grid');
+  const meta = document.getElementById('results-meta');
+  const pagination = document.getElementById('pagination');
+
+  const items = data.hebergements || data;
+  const total = data.total || items.length;
+  const page = data.page || state.page;
+  const perPage = data.per_page || state.perPage;
+
+  meta.style.display = 'flex';
+  document.getElementById('results-count').innerHTML =
+    `<strong>${total.toLocaleString('fr-FR')}</strong> résultat${total !== 1 ? 's' : ''}${data.demo ? ' <span style="color:var(--gold);font-size:0.75em">(mode démo)</span>' : ''}`;
+
+  if (!items || items.length === 0) {
+    grid.innerHTML = '<div class="state-message"><div class="big">🔍</div><p>Aucun hébergement trouvé pour ces critères.</p></div>';
+    pagination.style.display = 'none';
+    return;
+  }
+
+  grid.innerHTML = '';
+  grid.className = 'results-grid stagger';
+  items.forEach(h => grid.appendChild(createCard(h)));
+
+  // Pagination
+  const totalPages = Math.ceil(total / perPage);
+  if (totalPages > 1) {
+    pagination.style.display = 'flex';
+    document.getElementById('page-info').textContent = `Page ${page} sur ${totalPages}`;
+    const controls = document.getElementById('page-controls');
+    controls.innerHTML = '';
+    const range = getPageRange(page, totalPages);
+    if (page > 1) {
+      const b = document.createElement('button');
+      b.className = 'page-btn';
+      b.textContent = '←';
+      b.onclick = () => searchHebergements(page - 1);
+      controls.appendChild(b);
+    }
+    range.forEach(p => {
+      const b = document.createElement('button');
+      b.className = `page-btn${p === page ? ' active' : ''}`;
+      b.textContent = p;
+      b.onclick = () => searchHebergements(p);
+      controls.appendChild(b);
+    });
+    if (page < totalPages) {
+      const b = document.createElement('button');
+      b.className = 'page-btn';
+      b.textContent = '→';
+      b.onclick = () => searchHebergements(page + 1);
+      controls.appendChild(b);
+    }
+  } else {
+    pagination.style.display = 'none';
+  }
+}
+
+function getPageRange(current, total) {
+  const pages = [];
+  for (let i = Math.max(1, current - 2); i <= Math.min(total, current + 2); i++) pages.push(i);
+  return pages;
+}
+
+function createCard(h) {
+  const card = document.createElement('div');
+  card.className = 'card fade-in';
+  const stars = getStars(h.classement);
+  const url = h.site_internet;
+  card.innerHTML = `
+    <div class="card-type">
+      ${h.type_hebergement || '—'}
+      ${stars ? `<span class="stars">${stars}</span>` : ''}
+    </div>
+    <div class="card-name">${h.nom_commercial || '—'}</div>
+    <div class="card-meta">
+      ${h.ville || h.commune ? `<div class="card-detail">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1C4.07 1 2.5 2.57 2.5 4.5C2.5 7.25 6 11 6 11C6 11 9.5 7.25 9.5 4.5C9.5 2.57 7.93 1 6 1ZM6 5.75C5.31 5.75 4.75 5.19 4.75 4.5C4.75 3.81 5.31 3.25 6 3.25C6.69 3.25 7.25 3.81 7.25 4.5C7.25 5.19 6.69 5.75 6 5.75Z" fill="currentColor"/></svg>
+        ${h.ville || h.commune}${h.code_postal ? ` · ${h.code_postal}` : ''}
+      </div>` : ''}
+      ${h.classement ? `<div class="card-detail">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1L7.35 4.13L10.74 4.41L8.19 6.62L8.97 9.92L6 8.16L3.03 9.92L3.81 6.62L1.26 4.41L4.65 4.13L6 1Z" fill="currentColor"/></svg>
+        ${h.classement}
+      </div>` : ''}
+    </div>
+    <div class="card-footer">
+      <div class="card-capacity">
+        ${h.capacite_accueil ? `<strong>${h.capacite_accueil}</strong> pers.` : ''}
+        ${h.nombre_chambres ? ` · <strong>${h.nombre_chambres}</strong> ch.` : ''}
+      </div>
+      ${url ? `<a class="card-link" href="${url.startsWith('http') ? url : 'https://'+url}" target="_blank" rel="noopener">Site →</a>` : ''}
+    </div>
+  `;
+  card.addEventListener('click', (e) => {
+    if (e.target.tagName !== 'A') openModal(h);
+  });
+  return card;
+}
+
+function getStars(classement) {
+  if (!classement) return '';
+  const m = classement.match(/(\d)/);
+  if (!m) return '';
+  return '★'.repeat(parseInt(m[1]));
+}
+
+// ── MODAL ──
+function openModal(h) {
+  document.getElementById('modal-title').textContent = h.nom_commercial || '—';
+  const body = document.getElementById('modal-body');
+  const stars = getStars(h.classement);
+  body.innerHTML = `
+    <div class="modal-section">
+      <div class="modal-section-title">Classement &amp; Type</div>
+      <div style="display:flex;gap:0.75rem;flex-wrap:wrap">
+        ${h.classement ? `<span class="badge badge-gold">${stars} ${h.classement}</span>` : ''}
+        ${h.type_hebergement ? `<span class="badge badge-sage">${h.type_hebergement}</span>` : ''}
+        ${h.classement_proroge ? `<span class="badge badge-rust">Prorogé</span>` : ''}
+      </div>
+    </div>
+    <div class="modal-section">
+      <div class="modal-section-title">Localisation</div>
+      <div class="detail-grid">
+        ${h.ville || h.commune ? `<div class="detail-item"><div class="detail-key">Commune</div><div class="detail-val">${h.ville || h.commune}</div></div>` : ''}
+        ${h.code_postal ? `<div class="detail-item"><div class="detail-key">Code postal</div><div class="detail-val">${h.code_postal}</div></div>` : ''}
+        ${h.adresse ? `<div class="detail-item" style="grid-column:1/-1"><div class="detail-key">Adresse</div><div class="detail-val">${h.adresse}</div></div>` : ''}
+      </div>
+    </div>
+    <div class="modal-section">
+      <div class="modal-section-title">Capacité</div>
+      <div class="detail-grid">
+        ${h.capacite_accueil ? `<div class="detail-item"><div class="detail-key">Capacité d'accueil</div><div class="detail-val highlight">${h.capacite_accueil} personnes</div></div>` : ''}
+        ${h.nombre_chambres ? `<div class="detail-item"><div class="detail-key">Chambres</div><div class="detail-val highlight">${h.nombre_chambres}</div></div>` : ''}
+        ${h.nombre_emplacements ? `<div class="detail-item"><div class="detail-key">Emplacements</div><div class="detail-val">${h.nombre_emplacements}</div></div>` : ''}
+      </div>
+    </div>
+    ${h.date_classement ? `<div class="modal-section">
+      <div class="modal-section-title">Classement</div>
+      <div class="detail-item"><div class="detail-key">Date de classement</div><div class="detail-val">${h.date_classement}</div></div>
+    </div>` : ''}
+    ${h.site_internet ? `<div class="modal-section">
+      <div class="modal-section-title">Contact</div>
+      <a href="${h.site_internet.startsWith('http')?h.site_internet:'https://'+h.site_internet}" target="_blank" rel="noopener" style="color:var(--gold);font-size:0.9rem">${h.site_internet}</a>
+    </div>` : ''}
+    <div style="padding-top:1rem;border-top:1px solid var(--border);font-family:monospace;font-size:0.78rem;color:var(--muted)">
+      GET /hebergements/${h.id || h.id_hebergement || '?'}
+    </div>
+  `;
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById('modal-overlay')) closeModalDirect();
+}
+
+function closeModalDirect() {
+  document.getElementById('modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModalDirect(); });
+
+// ── TABS ──
+function switchTab(name) {
+  ['explorer','api','schema'].forEach(t => {
+    document.getElementById(`tab-${t}`)?.classList.toggle('active', t===name);
+    document.getElementById(`panel-${t}`)?.classList.toggle('active', t===name);
+  });
+  if (name !== 'explorer') document.getElementById('explorer-section').scrollIntoView({ behavior: 'smooth' });
+}
+
+// ── ENDPOINTS ACCORDION ──
+function toggleEndpoint(header) {
+  const body = header.nextElementSibling;
+  body.classList.toggle('open');
+}
+
+// ── PING TEST ──
+async function testPing() {
+  const el = document.getElementById('ping-result');
+  el.innerHTML = '<div style="margin-top:0.75rem;color:var(--muted);font-size:0.85rem">En attente de réponse…</div>';
+  try {
+    const res = await fetch('http://127.0.0.1:5000/ping', { signal: AbortSignal.timeout(3000) });
+    const data = await res.json();
+    el.innerHTML = `<div class="code-block" style="margin-top:0.75rem">${JSON.stringify(data, null, 2)}</div>`;
+  } catch {
+    el.innerHTML = `<div style="margin-top:0.75rem;padding:0.75rem;background:rgba(139,58,42,0.08);border-radius:4px;font-size:0.85rem;color:var(--rust)">
+      ⚠ Impossible de joindre l'API. Vérifiez que Flask est démarré : <code>python app.py</code>
+    </div>`;
+  }
+}
+
+// ── SCROLL ──
+function scrollToExplorer() {
+  document.getElementById('explorer-section').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Allow Enter key in search inputs
+document.addEventListener('DOMContentLoaded', () => {
+  ['filter-ville','filter-type','filter-classement','filter-perpage'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('keydown', e => { if (e.key === 'Enter') searchHebergements(1); });
+  });
+});
+</script>
+</body>
+</html>
