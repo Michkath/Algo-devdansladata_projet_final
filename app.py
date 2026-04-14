@@ -1,13 +1,16 @@
-from flask import Flask
-from routes import api
+from flask import Flask, render_template
+from routes import api  
+
 
 app = Flask(__name__)
+
+app.json.ensure_ascii = False 
+
 app.register_blueprint(api)
 
-@app.route("/ping")
-def ping():
-    return "pong"
+@app.route("/")
+def index():
+    return render_template("index.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
-    
