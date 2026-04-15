@@ -1,7 +1,7 @@
 -- ============================
 -- 1️. Création de la base
 -- ============================
-CREATE DATABASE tourisme_dw;
+\c tourisme_dw;
 
 -- À exécuter séparément dans pgAdmin :
 -- Puis se connecter à la base tourisme_dw avant la suite
@@ -12,7 +12,7 @@ CREATE DATABASE tourisme_dw;
 CREATE TABLE IF NOT EXISTS localisation (
     id_localisation SERIAL PRIMARY KEY,
     adresse TEXT,
-    code_postal VARCHAR(10),
+    code_postal VARCHAR(50),
     commune VARCHAR(100)
 );
 

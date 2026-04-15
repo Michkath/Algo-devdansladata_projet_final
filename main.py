@@ -1,10 +1,11 @@
 import os
 from scrapping import DataIngestor
 from cleaning import DataTransformer
+from dw_loader import run_dw_loader          
 
 def run_pipeline():
     URL_STABLE = "https://www.data.gouv.fr/api/1/datasets/r/3ce290bf-07ec-4d63-b12b-d0496193a535"
-    DB_URI = os.getenv("MONGO_URI", "mongodb://admin:password@localhost:27017/")
+    DB_URI = os.getenv("MONGO_URI", "mongodb://admin:password@mongodb:27017/")
     
     ingestor = DataIngestor(db_uri=DB_URI)
     transformer = DataTransformer(db_uri=DB_URI)
@@ -19,6 +20,7 @@ def run_pipeline():
 
     if transformer.run_pipeline():
         print("Succes : Transformation et stockage en base reussis.")
+        run_dw_loader()                         
         print("ETL Pipeline Success")
     else:
         print("Erreur : Echec lors de la transformation des donnees.")

@@ -1264,6 +1264,7 @@ async function searchHebergements(page) {
   const params = new URLSearchParams({ page, per_page: state.perPage });
   if (state.ville) params.set('ville', state.ville);
   if (state.type) params.set('type', state.type);
+  if (state.classement) params.set('classement', state.classement);
 
   const apiUrl = `http://127.0.0.1:5000/hebergements?${params}`;
   document.getElementById('api-url-display').textContent = `GET /hebergements?${params}`;

@@ -60,7 +60,7 @@ def get_all_hebergements(ville=None, type_hebergement=None, classement_filtre=No
         LEFT JOIN classement c ON h.id_classement = c.id_classement
     """ + conditions
 
-    # Ajout de la pagination (LIMIT et OFFSET)
+    
     offset = (page - 1) * per_page
     data_query += " LIMIT %s OFFSET %s"
     
@@ -73,7 +73,7 @@ def get_all_hebergements(ville=None, type_hebergement=None, classement_filtre=No
     cursor.close()
     conn.close()
 
-    # On renvoie à la fois les données ET le total !
+   
     return results, total
 
 def get_hebergement_by_id(hebergement_id):
