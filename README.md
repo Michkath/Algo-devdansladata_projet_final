@@ -237,7 +237,20 @@ GET http://localhost:5000/hebergements?ville=Paris&type=hotel&page=1&per_page=20
 
 ## Dashboard BI — fonctionnalités
 
-<!-- capture d'écran du dashboard -->
+### Vue d'ensemble — tous les hébergements
+![Vue globale du dashboard](screenshots/01_vue_globale.png)
+
+### Filtre par type — Hôtels uniquement
+![Filtre Hôtels](screenshots/02_filtre_hotels.png)
+
+### Cartographie — densité des hôtels 5 étoiles par département
+![Carte choroplèthe 5 étoiles](screenshots/03_carte_5etoiles.png)
+
+### Analyse croisée — capacité par type et par étoiles
+![Analyse croisée](screenshots/04_analyse_croisee.png)
+
+### Export CSV de la sélection
+![Export CSV](screenshots/05_export_csv.png)
 
 Le dashboard Streamlit propose 3 onglets :
 
@@ -251,7 +264,8 @@ Les filtres dans la barre latérale (type, commune, étoiles) s'appliquent à to
 
 ## Interface Web
 
-<!-- capture d'écran de l'interface web -->
+<!-- À compléter : déposer une capture dans screenshots/06_interface_web.png -->
+<!-- ![Interface Web](screenshots/06_interface_web.png) -->
 
 Accessible sur `http://localhost:5000`, l'interface permet :
 - Recherche par ville, type, classement
