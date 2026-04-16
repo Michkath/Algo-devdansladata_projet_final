@@ -8,7 +8,7 @@ from cleaning import DataTransformer
 
 @pytest.fixture
 def transformer():
-    return DataTransformer()
+    return DataTransformer(db_uri="mongodb://admin:password@localhost:27017/")
 
 def test_storage_integration(transformer):
     """Test d'Intégration : Vérifie l'écriture dans MongoDB."""
