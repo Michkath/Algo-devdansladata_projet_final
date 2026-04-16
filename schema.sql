@@ -12,7 +12,7 @@ CREATE DATABASE tourisme_dw;
 CREATE TABLE IF NOT EXISTS localisation (
     id_localisation SERIAL PRIMARY KEY,
     adresse TEXT,
-    code_postal VARCHAR(10),
+    code_postal VARCHAR(20),
     commune VARCHAR(100)
 );
 
