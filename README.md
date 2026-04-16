@@ -235,22 +235,48 @@ GET http://localhost:5000/hebergements?ville=Paris&type=hotel&page=1&per_page=20
 
 ---
 
+c1
+
+
+c2
+
+
+
+c3
+
+
+c4
+
+
+c5
+
+
+
+
+
+
 ## Dashboard BI — fonctionnalités
 
 ### Vue d'ensemble — tous les hébergements
-![Vue globale du dashboard](screenshots/01_vue_globale.png)
+![Vue globale du dashboard](<img width="1919" height="968" alt="Image" src="https://github.com/user-attachments/assets/8948dc2d-8ea9-49e1-8069-7eb82470f77c" />
+)
 
 ### Filtre par type — Hôtels uniquement
-![Filtre Hôtels](screenshots/02_filtre_hotels.png)
+![Filtre Hôtels](<img width="1919" height="862" alt="Image" src="https://github.com/user-attachments/assets/38de4bac-141d-4738-ad27-932d8d573137" />
+)
 
 ### Cartographie — densité des hôtels 5 étoiles par département
-![Carte choroplèthe 5 étoiles](screenshots/03_carte_5etoiles.png)
+![Carte choroplèthe 5 étoiles](<img width="1912" height="856" alt="Image" src="https://github.com/user-attachments/assets/f7e2d869-a212-4571-9041-c79343ac2cd0" />
+)
 
 ### Analyse croisée — capacité par type et par étoiles
-![Analyse croisée](screenshots/04_analyse_croisee.png)
+![Analyse croisée](<img width="1900" height="842" alt="Image" src="https://github.com/user-attachments/assets/1d73d679-3810-46b3-b1fa-8e629ea45ba6" />
+)
 
 ### Export CSV de la sélection
-![Export CSV](screenshots/05_export_csv.png)
+!Export CSV
+<img width="1919" height="1021" alt="Image" src="https://github.com/user-attachments/assets/ed201cbd-a149-4a24-a815-d3dec78f66a9" />
+
 
 Le dashboard Streamlit propose 3 onglets :
 
@@ -264,8 +290,8 @@ Les filtres dans la barre latérale (type, commune, étoiles) s'appliquent à to
 
 ## Interface Web
 
-<!-- À compléter : déposer une capture dans screenshots/06_interface_web.png -->
-<!-- ![Interface Web](screenshots/06_interface_web.png) -->
+!Interface Web
+<img width="1919" height="968" alt="Image" src="https://github.com/user-attachments/assets/74bd661c-8604-401d-a844-c16e4dbf565e" />
 
 Accessible sur `http://localhost:5000`, l'interface permet :
 - Recherche par ville, type, classement
