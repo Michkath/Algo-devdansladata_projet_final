@@ -114,7 +114,7 @@ Lors de l'installation, notez bien le mot de passe que vous choisissez.
 ### Étape 1 — Cloner ou télécharger le projet
 
 ```bash
-git clone <[url-du-repo](https://github.com/Michkath/Algo-devdansladata_projet_final.git)>
+git clone <(https://github.com/Michkath/Algo-devdansladata_projet_final.git)>
 cd Algo-devdansladata_projet_final
 ```
 
