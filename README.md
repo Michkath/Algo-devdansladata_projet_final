@@ -252,7 +252,7 @@ Carte choroplèthe 5 étoiles
 
 ### Analyse croisée — capacité par type et par étoiles
 Analyse croisée
-img width="1900" height="842" alt="Image" src="https://github.com/user-attachments/assets/1d73d679-3810-46b3-b1fa-8e629ea45ba6" />
+<img width="1900" height="842" alt="Image" src="https://github.com/user-attachments/assets/1f68e9b7-4f15-4883-8564-3098c6777087" />
 
 ### Export CSV de la sélection
 Export CSV
