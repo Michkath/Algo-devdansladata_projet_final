@@ -530,7 +530,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 26/11/2021;HÔTEL DE TOURISME;3 étoiles;-;-;B&B HOTEL ORLÉANS NORD SARAN;Chemin des Sablons;45770;SARAN;https://www.hotel-bb.com/fr/hotel/orleans-nord-saran;-;235;111;-;-;-;non
 26/08/2024;HÔTEL DE TOURISME;3 étoiles;-;-;B&B HOTEL ORLÉANS SARAN;693 A rue Maryse Hilsz;45770;SARAN;https://www.hotel-bb.com/fr/hotel/orleans-saran;-;188;85;-;-;-;non
 05/09/2024;HÔTEL DE TOURISME;3 étoiles;-;-;B&B HOTEL PARIS CLICHY-SOUS-BOIS;1 allée Etienne Laurent;93390;CLICHY-SOUS-BOIS;https://www.hotel-bb.com/fr/hotel/paris-clichy-sous-bois;-;205;90;-;-;-;non
-15/04/2021;HÔTEL DE TOURISME;4 étoiles;-;-;B&B HOTEL PARIS GRAND ROISSY CDG AÉROPORT;7 allée du Verger;95700;ROISSY-EN-FRANCE;https://www.hotel-bb.com/fr/hotel/paris-grand-roissy-cdg-aeroport;-;296;148;-;-;-;non
+15/04/2021;HÔTEL DE TOURISME;4 étoiles;-;-;B&B HOTEL PARIS GRAND ROISSY CDG AÉROPORT;7 allée du Verger;95700;ROISSY-EN-FRANCE;https://www.hotel-bb.com/fr/hotel/paris-grand-roissy-cdg-aeroport;-;296;148;-;-;-;oui
 18/12/2023;HÔTEL DE TOURISME;3 étoiles;-;-;B&B HOTEL PARIS MAIRIE DE SAINT-OUEN;65 rue du Docteur Bauer;93400;SAINT-OUEN;https://www.hotel-bb.com/fr/hotel/paris-mairie-de-saint-ouen?;-;318;129;-;-;-;non
 07/03/2022;HÔTEL DE TOURISME;4 étoiles;-;-;B&B HOTEL PARIS NORD 18ÈME;1 impasse Marteau;75018;PARIS 18E ARRONDISSEMENT;https://www.hotel-bb.com/fr/hotel/paris-nord-18-eme;-;622;187;-;-;-;non
 23/12/2024;HÔTEL DE TOURISME;3 étoiles;-;-;B&B HOTEL PARIS PORTE D ORLEANS;53-55 BOULEVARD ROMAIN ROLLND;92120;MONTROUGE;https://www.hotel-bb.com/fr/hotel/paris-porte-d-orleans;-;225;102;-;-;-;non
@@ -859,7 +859,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 01/07/2021;HÔTEL DE TOURISME;3 étoiles;-;-;BOULOGNE RÉSIDENCE HÔTEL;32 rue des Longs Prés;92100;BOULOGNE-BILLANCOURT;https://www.boulogneresidencehotel.com/;-;42;21;-;-;-;non
 27/04/2021;HÔTEL DE TOURISME;4 étoiles;-;-;BOUTIQUE HÔTEL & SPA LE MONASTÈRE DE SAINT-MONT;627 rue Bernard Tumapaler;32400;SAINT-MONT;https://lemonasteredesaintmont.com/;-;24;11;-;-;-;non
 04/07/2023;HÔTEL DE TOURISME;3 étoiles;-;-;BOUTIQUE HÔTEL D'ANGLETERRE;1 rue Louis Philippe;76600;LE HAVRE;https://www.boutiquehotel-angleterre-lehavre.com/;-;56;27;-;-;-;non
-07/09/2021;HÔTEL DE TOURISME;4 étoiles;-;-;BOUTIQUE HÔTEL ENTRAIGUES;8 rue de la calade;30700;UZÈS;https://www.hotel-entraigues.com/;-;47;19;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;4 étoiles;-;-;BOUTIQUE HÔTEL ENTRAIGUES;8 rue de la calade;30700;UZÈS;https://www.hotel-entraigues.com/;-;47;19;-;-;-;non
 29/10/2024;HÔTEL DE TOURISME;5 étoiles;-;-;BOUTIQUE HÔTEL MAISON NOVA;33 Route du Pla de las Fourques;66190;COLLIOURE;https://www.maisonnova-collioure.com/fr/;-;26;13;-;-;-;non
 04/06/2024;HÔTEL DE TOURISME;4 étoiles;-;-;BOUTIQUE HÔTEL PROVENCIA;12 boulevard salvator;13006;MARSEILLE;http://boutiquehotelprovencia.com;-;36;18;-;-;-;non
 03/08/2021;HÔTEL DE TOURISME;3 étoiles;-;-;BOUTIQUE HÔTEL VICTORIA;15 place de l'Esplan;26130;SAINT-PAUL-TROIS-CHÂTEAUX;https://levictoriaboutiquehotel.com/;-;76;35;-;-;-;non
@@ -2080,7 +2080,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 29/09/2025;CAMPING;4 étoiles;TOURISME;-;CAMPING DES FAVARDS;1335 route d'Orange;84150;VIOLÈS;http://www.camping-favards.com;-;282;-;94;-;-;non
 21/05/2025;CAMPING;2 étoiles;TOURISME;-;CAMPING DES FORGES;1236 ROUTE DE PARENTIS EN BORN;40160;YCHOUX;campingdesforgeslandes.fr;-;129;-;43;-;-;non
 07/07/2023;CAMPING;2 étoiles;TOURISME;-;CAMPING DES FORGES;Rue du Doubs;39700;RANCHOT;https://www.juracampingdesforges.fr/;-;90;-;30;-;-;non
-15/04/2021;CAMPING;4 étoiles;TOURISME;-;CAMPING DES GAVES;Quartier Pon;64440;LARUNS;http://www.campingdesgaves.com;-;270;-;99;-;-;non
+15/04/2021;CAMPING;4 étoiles;TOURISME;-;CAMPING DES GAVES;Quartier Pon;64440;LARUNS;http://www.campingdesgaves.com;-;270;-;99;-;-;oui
 10/01/2024;CAMPING;3 étoiles;TOURISME;-;CAMPING DES GAYEULLES;Rue du Professeur Maurice Audin;35200;RENNES;http://www.camping-rennes.com;-;432;-;144;-;-;non
 05/07/2022;CAMPING;3 étoiles;TOURISME;-;CAMPING DES GENÊTS;400 avenue des Alpes;01170;GEX;https://www.camping-gex.com;-;396;-;132;-;-;non
 08/07/2022;CAMPING;4 étoiles;TOURISME;-;CAMPING DES GORGES;Quartier de Sauze;07700;SAINT-MARTIN-D'ARDÈCHE;https://www.camping-des-gorges.com/;-;400;-;145;-;-;non
@@ -2900,7 +2900,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 25/10/2021;CAMPING;3 étoiles;TOURISME;-;CAMPING INTERNATIONAL;Avenue Christophe Colomb;20260;CALVI;https://camping-calvi.fr/;-;257;-;76;-;-;non
 11/10/2022;CAMPING;3 étoiles;TOURISME;-;CAMPING INTERNATIONAL DE JABLINES;Base de Loisirs de Jablines Annet;77450;JABLINES;http://www.camping-jablines.com;-;480;-;160;-;-;non
 08/06/2022;CAMPING;5 étoiles;TOURISME;-;CAMPING INTERNATIONAL DU LAC BLEU;Route de la Plage;74210;DOUSSARD;https://www.camping-lac-bleu.com/fr/;-;660;-;220;-;-;non
-17/12/2021;CAMPING;3 étoiles;TOURISME;-;CAMPING INTERNATIONAL DU ROUSSILLON;Route Départementale 900;66600;SALSES-LE-CHÂTEAU;https://www.camping-roussillon.com/;-;282;-;94;-;-;non
+15/04/2026;CAMPING;3 étoiles;TOURISME;-;CAMPING INTERNATIONAL DU ROUSSILLON;Route Départementale 900;66600;SALSES-LE-CHÂTEAU;https://camping-roussillon.fr/;-;222;-;74;-;-;non
 11/05/2021;CAMPING;3 étoiles;TOURISME;-;CAMPING INTERNATIONAL DU SIERROZ;Boulevard Barrier;73100;AIX-LES-BAINS;https://www.camping-sierroz.com/;-;596;-;149;-;-;non
 21/11/2022;CAMPING;3 étoiles;TOURISME;-;CAMPING INTERNATIONAL DU VIVIER AUX CARPES;10 rue Charles Voyeux;02790;SERAUCOURT-LE-GRAND;http://www.camping-picardie.com;-;186;-;62;-;-;non
 20/10/2021;CAMPING;4 étoiles;TOURISME;-;CAMPING INTERNATIONAL ERROMARDIE;Avenue de la Source;64500;SAINT-JEAN-DE-LUZ;https://www.chadotel.com/camping-linternational-erromardie-saint-jean-de-luz/;-;850;-;216;-;-;non
@@ -3317,11 +3317,11 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 01/06/2022;CAMPING;2 étoiles;TOURISME;-;CAMPING LA FONTAINE DU HALLATE;8 chemin de Poul Fetan;56400;PLOUGOUMELEN;https://www.camping-morbihan.bzh/fr/;-;270;-;120;-;-;non
 02/10/2023;CAMPING;2 étoiles;TOURISME;-;CAMPING LA FONTINELLE;La fontinelle;07150;BESSAS;https://www.camping-la-fontinelle.com/;-;36;-;12;-;-;non
 11/08/2022;CAMPING;2 étoiles;LOISIRS;-;CAMPING LA FORET;Avenue de la palmyre;17570;LES MATHES;https://www.deuxieme-adresse.com/domaines/domaine-la-foret/;-;111;-;37;-;-;non
-25/10/2021;CAMPING;3 étoiles;LOISIRS;-;CAMPING LA FORÊT;149 boulevard de Berck;62780;CUCQ;https://www.camping-touquet-parisplage.fr/;-;616;-;154;-;-;non
 16/06/2022;CAMPING;2 étoiles;TOURISME;-;CAMPING LA FORÊT;Lieu-dit Wolfsgrub;67530;BOERSCH;https://vacances-andretrigano.com/camping/bas-rhin/la-foret-klingenthal;-;300;-;86;-;-;non
 28/08/2024;CAMPING;2 étoiles;TOURISME;-;CAMPING LA FORÊT;La Rosière;73700;MONTVALEZAN;www.camping-la-foret-rosiere.fr;-;156;-;52;-;-;non
 03/11/2021;CAMPING;3 étoiles;TOURISME;-;CAMPING LA FORÊT;1 rue de la Clairière;85190;AIZENAY;https://www.camping-laforet.com/;-;152;-;84;-;-;non
 24/09/2021;CAMPING;3 étoiles;TOURISME;-;CAMPING LA FORÊT;1926 route de Sillé Plage;72140;SILLÉ-LE-GUILLAUME;https://vacances-seasonova.com/fr/camping/camping-seasonova-de-la-foret/;-;400;-;143;-;-;non
+25/10/2021;CAMPING;3 étoiles;LOISIRS;-;CAMPING LA FORÊT;149 boulevard de Berck;62780;CUCQ;https://www.camping-touquet-parisplage.fr/;-;616;-;154;-;-;non
 10/08/2022;CAMPING;3 étoiles;TOURISME;-;CAMPING LA FORÊT LAHITTE;route des campings;40160;PARENTIS-EN-BORN;https://www.camping-laforet-lahitte.fr/;-;318;-;106;-;-;non
 03/10/2022;CAMPING;3 étoiles;TOURISME;-;CAMPING LA FRITILLAIRE;rue basse;37420;SAVIGNY-EN-VÉRON;https://www.campinglafritillaire.com/;-;285;-;95;-;-;non
 02/05/2023;CAMPING;2 étoiles;LOISIRS;-;CAMPING LA FRÉGATE;465 avenue du lac;62610;ARDRES;http://www.camping-la-fregate.com/;-;198;-;66;-;-;non
@@ -3639,7 +3639,6 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 10/01/2023;CAMPING;3 étoiles;TOURISME;-;CAMPING LA SITTELLE;place hector vincent;72540;LOUÉ;https://www.camping-la-sittelle.fr/;-;72;-;24;-;-;non
 14/10/2022;CAMPING;3 étoiles;TOURISME;-;CAMPING LA SOLANILLA;Hameau Lahount;32400;LELIN-LAPUJOLLE;http://www.campinglasolanilla.com/;-;372;-;86;-;-;non
 21/06/2021;CAMPING;3 étoiles;TOURISME;-;CAMPING LA SORGUETTE;871 Route d'Apt;84800;L'ISLE-SUR-LA-SORGUE;https://www.camping-sorguette.com/;-;492;-;164;-;-;non
-23/09/2021;CAMPING;3 étoiles;TOURISME;-;CAMPING LA SOURCE;Route de la Saulce;13500;MARTIGUES;https://www.camping-la-source-martigues.com/;-;263;-;71;-;-;non
 09/10/2023;CAMPING;3 étoiles;TOURISME;-;CAMPING LA SOURCE;route des gwéiots;56360;SAUZON;http://www.belleile-lasource.com;-;150;-;50;-;-;non
 08/07/2022;CAMPING;4 étoiles;TOURISME;-;CAMPING LA SOURCE;Presqu'île de Laussac;12600;THÉRONDELS;https://www.camping-la-source.com/;-;303;-;101;-;-;non
 26/06/2023;CAMPING;3 étoiles;TOURISME;-;CAMPING LA SOURCE;540 Chemin de la Rouvière;07460;BERRIAS-ET-CASTELJAU;https://www.camping-source-ardeche.com/camping_3_etoiles_ardeche_07_location_vacances/;-;306;-;102;-;-;non
@@ -3647,6 +3646,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 27/04/2023;CAMPING;3 étoiles;TOURISME;-;CAMPING LA SOURCE;63 rue des Tisserands;76550;HAUTOT-SUR-MER;https://www.camping-la-source.fr/;-;360;-;120;-;-;non
 29/06/2022;CAMPING;1 étoile;TOURISME;-;CAMPING LA SOURCE;Route de Valence;05140;SAINT-PIERRE-D'ARGENÇON;http://www.lasource-hautesalpes.com/;-;75;-;25;-;-;non
 24/07/2025;CAMPING;3 étoiles;TOURISME;-;CAMPING LA SOURCE;Rue de la Citadelle;66730;SOURNIA;https://www.campinglasource.net;-;129;-;43;-;-;non
+23/09/2021;CAMPING;3 étoiles;TOURISME;-;CAMPING LA SOURCE;Route de la Saulce;13500;MARTIGUES;https://www.camping-la-source-martigues.com/;-;263;-;71;-;-;non
 28/06/2021;CAMPING;4 étoiles;TOURISME;-;CAMPING LA SOURCE DU JABRON;Quartier la Patte;26220;COMPS;https://www.campinglasource.com/fr/;-;440;-;108;-;-;non
 19/12/2023;CAMPING;4 étoiles;TOURISME;-;CAMPING LA SOURCE SAINT PIERRE;Chemin du moulin de siau;34150;ANIANE;http://www.campingstpierre.com;-;210;-;70;-;-;non
 19/10/2021;CAMPING;4 étoiles;TOURISME;-;CAMPING LA SOUSTA;28 avenue du Pont du Gard;30210;REMOULINS;https://www.lasousta.com/;-;990;-;330;-;-;non
@@ -3735,7 +3735,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 02/11/2021;CAMPING;4 étoiles;LOISIRS;-;CAMPING LANDES OCÉANES;Route de Linxe;40550;SAINT-MICHEL-ESCALUS;https://www.camping-landes-oceanes.com/;-;350;-;89;-;-;non
 20/06/2022;CAMPING;3 étoiles;TOURISME;-;CAMPING LANN BRICK;18 Lieu-dit Lann Brick;56740;LOCMARIAQUER;https://www.camping-lannbrick.com/;-;288;-;96;-;-;non
 11/06/2021;CAMPING;1 étoile;TOURISME;-;CAMPING LANOTTE;160 route de Braous;40180;YZOSSE;-;-;200;-;48;-;-;non
-26/04/2021;CAMPING;3 étoiles;TOURISME;-;CAMPING LARLAPEAN;Maison Lardapidia;64780;SAINT-MARTIN-D'ARROSSA;https://www.larlapean.com/;-;120;-;32;-;-;non
+26/04/2021;CAMPING;3 étoiles;TOURISME;-;CAMPING LARLAPEAN;840 chemin gaineko bidea;64780;SAINT-MARTIN-D'ARROSSA;https://www.larlapean.com/;-;120;-;32;-;-;non
 07/05/2025;CAMPING;3 étoiles;TOURISME;-;CAMPING LARRIBAL;AVENUE DE MILLAU PLAGE;12100;MILLAU;www.campinglarribal.com;-;207;-;69;-;-;non
 13/06/2022;CAMPING;3 étoiles;TOURISME;-;CAMPING LARROULETA;210 route de Socoa;64122;URRUGNE;https://www.larrouleta.com/;-;981;-;300;-;-;non
 11/08/2022;CAMPING;3 étoiles;TOURISME;-;CAMPING LAS ASPERAS;Avenue du Pouligou;66340;PALAU-DE-CERDAGNE;http://www.camping-pyrenees-cerdagne.com;-;183;-;61;-;-;non
@@ -4693,7 +4693,6 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 04/09/2025;CAMPING;3 étoiles;TOURISME;-;CAMPING LE TEMPS DE VIVRE;Lieu-Dit Malmont;24590;SALIGNAC-EYVIGUES;http://www.temps-de-vivre.com;-;150;-;50;-;-;non
 23/09/2021;CAMPING;4 étoiles;TOURISME;-;CAMPING LE TEMPS LIBRE;Lieu-dit Fond Rozier;38150;BOUGÉ-CHAMBALUD;https://www.capfun.com/camping-france-rhone_alpes-temps_libre-FR.html;-;1471;-;313;-;-;non
 02/05/2022;CAMPING;3 étoiles;LOISIRS;-;CAMPING LE TENZOR DE LA BAIE;10 bis rue Théophile Blin;35120;CHERRUEIX;https://www.le-tenzor-de-la-baie.com/;-;240;-;78;-;-;non
-03/11/2022;CAMPING;3 étoiles;TOURISME;-;CAMPING LE TERRADOS;7 route Saint-Préjet;48210;LES VIGNES;https://www.campingleterrados.fr/;-;195;-;65;-;-;non
 20/12/2022;CAMPING;3 étoiles;TOURISME;-;CAMPING LE TERRIER;Avenue du vert galant;64230;LESCAR;https://camping-terrier.fr/;-;270;-;90;-;-;non
 06/06/2023;CAMPING;2 étoiles;TOURISME;-;CAMPING LE TERRIOL;Rue du Cuzoul;46160;CAJARC;https://www.campingleterriol.com/;-;135;-;45;-;-;non
 19/10/2023;CAMPING;3 étoiles;TOURISME;-;CAMPING LE TEXAS;Taxo d'avall;66700;ARGELÈS-SUR-MER;https://www.clicochic.com/camping-france-languedoc_roussillon-texas-FR.html;-;405;-;135;-;-;non
@@ -6027,7 +6026,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 19/08/2024;CAMPING;2 étoiles;TOURISME;-;CAMPING MUNICIPAL LES RIVES DE MARNE;Rue de Verdun;52320;VOUÉCOURT;https://campingvouecourt.jimdofree.com/;-;120;-;40;-;-;non
 22/10/2021;CAMPING;2 étoiles;TOURISME;-;CAMPING MUNICIPAL LES ROCHES;Bord du Lac;04500;SAINTE-CROIX-DU-VERDON;http://lesrochesverdon.com/;-;594;-;190;-;-;non
 15/09/2022;CAMPING;2 étoiles;TOURISME;-;CAMPING MUNICIPAL LES ROYÈRES DU PRIEURÉ;52 chemin de la Combe Saint Pierre;84660;MAUBEC;https://www.campingmaubec-luberon.com/;-;225;-;75;-;-;non
-26/05/2021;CAMPING;2 étoiles;TOURISME;-;CAMPING MUNICIPAL LES RUISSES;CD 957;83630;LES SALLES-SUR-VERDON;https://www.campinglesruisses.fr/;-;800;-;250;-;-;non
+15/04/2026;CAMPING;2 étoiles;TOURISME;-;CAMPING MUNICIPAL LES RUISSES;CD 957;83630;LES SALLES-SUR-VERDON;https://www.campinglesruisses.fr/;-;630;-;210;-;-;non
 02/06/2022;CAMPING;2 étoiles;TOURISME;-;CAMPING MUNICIPAL LES SABLES BLANCS;Route de Quiberon;56340;PLOUHARNEL;https://www.sablesblancsplouharnel.fr/;-;1695;-;565;-;-;non
 10/11/2022;CAMPING;3 étoiles;TOURISME;-;CAMPING MUNICIPAL LES SABLÈRES;boulevard du marensin;40480;VIEUX-BOUCAU-LES-BAINS;https://www.camping-les-sableres.com/;-;1551;-;517;-;-;non
 25/07/2024;CAMPING;2 étoiles;TOURISME;-;CAMPING MUNICIPAL LES SALORGES;Rue du Camping;35480;GUIPRY-MESSAC;https://www.guipry-messac.fr/camping-municipal-les-salorges/;-;150;-;50;-;-;non
@@ -6890,6 +6889,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 09/03/2022;HÔTEL DE TOURISME;2 étoiles;-;-;ESCAL HÔTEL;7 rue du Rivage;62630;ÉTAPLES;https://www.escal-hotel.com/fr/index.html;-;53;23;-;-;-;non
 10/06/2024;HÔTEL DE TOURISME;3 étoiles;-;-;EST HÔTEL PARIS;49 bd Magenta;75010;PARIS;https://www.est-hotel-paris.com/;-;153;74;-;-;-;non
 21/12/2021;HÔTEL DE TOURISME;2 étoiles;-;-;ETC... HÔTEL;7 rue de la Chaîne;67000;STRASBOURG;https://etc-hotel.com/fr/;-;80;35;-;-;-;non
+15/04/2026;AUBERGE COLLECTIVE;Auberge collective;-;-;ETHIC ETAPES LAC DE ST CYR;24 rue de la bourdilliere;86130;BEAUMONT SAINT-CYR;https://archipel-vacances.fr/ethic-etapes-lac-de-saint-cyr/;-;170;38;-;-;-;non
 11/12/2025;RÉSIDENCE DE TOURISME;3 étoiles;-;-;EURECA;33 Rue Aristide Briand;73570;BRIDES-LES-BAINS;https://eureca-brides.com/fr/hiver;-;156;-;-;56;-;non
 11/06/2024;HÔTEL DE TOURISME;3 étoiles;-;-;EURO HÔTEL CRÉTEIL;12 Avenue Fernand Pouillon;94000;CRÉTEIL;http://eurohotelpariscreteil.com/;-;210;96;-;-;-;non
 14/05/2024;HÔTEL DE TOURISME;3 étoiles;-;-;EURO HÔTEL ORLY RUNGIS;63 Avenue du Parc Médicis;94260;FRESNES;http://eurohotelparisorly.com/;-;238;94;-;-;-;non
@@ -7201,7 +7201,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 17/03/2023;HÔTEL DE TOURISME;4 étoiles;-;-;HOSTELLERIE DES BAS-RUPTS ET CHALET FLEURI;181 route de la bresse;88400;GÉRARDMER;www.bas-rupts.com;-;56;23;-;-;-;non
 04/01/2024;HÔTEL DE TOURISME;3 étoiles;-;-;HOSTELLERIE DES CHATEAUX;POINTE DES CHATEAUX;97118;SAINT FRANCOIS;www.hostellerie-des-chateaux.com;-;16;8;-;-;-;non
 31/03/2023;HÔTEL DE TOURISME;4 étoiles;-;-;HOSTELLERIE DES CHÂTEAUX & SPA;11 rue des Châteaux;67530;OTTROTT;http://www.hostellerie-chateaux.fr;-;145;64;-;-;-;non
-28/09/2020;HÔTEL DE TOURISME;3 étoiles;-;-;HOSTELLERIE DES CLOS;18 rue Jules Rathier;89800;CHABLIS;https://www.hostellerie-des-clos.fr/;-;83;36;-;-;-;oui
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HOSTELLERIE DES CLOS;18 rue Jules Rathier;89800;CHABLIS;https://www.hostellerie-des-clos.fr/;-;54;26;-;-;-;non
 27/01/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HOSTELLERIE DES CÈDRES;2 rue de l'Eglise;31800;VILLENEUVE-DE-RIVIÈRE;https://www.hotel-descedres.com/;-;54;23;-;-;-;non
 10/03/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HOSTELLERIE DES DUCS;Boulevard Jean Brisseau;47120;DURAS;https://www.hostellerieducs-duras.com/;-;34;20;-;-;-;non
 17/10/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HOSTELLERIE DES TROIS PIGEONS;2 Rue Dargaud;71600;PARAY-LE-MONIAL;http://h-3-p.com;-;92;40;-;-;-;non
@@ -7282,17 +7282,20 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 26/10/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HOTEL AEREL;4 rue Dieudonné Costes;31700;BLAGNAC;aerel.fr;-;66;33;-;-;-;non
 19/12/2022;HÔTEL DE TOURISME;4 étoiles;-;-;HOTEL AIGLE DU MONTANA;318 rue des almes;73320;TIGNES;https://etincelles.com/hotel/hotel-l-aigle-du-montana/;-;45;21;-;-;-;non
 16/10/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HOTEL AKENA BESANÇON;1 B rue Victor Considerant;25320;CHEMAUDIN;https://www.hotel-akena-besancon.com/;-;120;60;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HOTEL AKENA CHALONS EN CHAMPAGNE;2 BIS RUE AUGUSTIN FRESNEL;51000;CHÂLONS-EN-CHAMPAGNE;https://akenahotels.com/hotel-chalons-en-champagne/;-;130;65;-;-;-;non
 11/12/2025;HÔTEL DE TOURISME;3 étoiles;-;-;HOTEL AKENA HOERDT STRASBOURG;9 RUE MARGUERITE PEREY;67720;HŒRDT;https://akenahotels.com/hotel-hoerdt-strasbourg/;-;134;67;-;-;-;non
 14/06/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HOTEL AKENA NANTES REZÉ AÉROPORT;12 rue des Bruyères;44400;REZÉ;https://www.hotels-akena.com/hotel/hotel-akena-nantes-reze-aeroport;-;164;78;-;-;-;non
 12/08/2025;HÔTEL DE TOURISME;2 étoiles;-;-;HOTEL ALPAKA;101 route de la bechigne;74390;CHÂTEL;www.hotelalpaka.fr;-;26;13;-;-;-;non
 28/08/2024;HÔTEL DE TOURISME;3 étoiles;-;-;HOTEL ALPEEN;210 RUE DE FONTANETTES;73440;LES BELLEVILLE;alpeenhotel.com;-;125;33;-;-;-;non
 05/03/2025;HÔTEL DE TOURISME;2 étoiles;-;-;HOTEL AMBASSADEUR;4 RUE DE TOURNAI;59800;LILLE;www.hotel-lille-ambassadeur.fr;-;58;29;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HOTEL AMOI VIEUX-PORT MARSEILLE;26 rue de Breteuil;13006;MARSEILLE 6E ARRONDISSEMENT;https://hotelamoimarseille.com/;-;46;23;-;-;-;non
 26/02/2025;HÔTEL DE TOURISME;2 étoiles;-;-;HOTEL APPIA;8  rue du chateauneuf;06400;CANNES;https://hotelappia-cannes.fr/;-;49;28;-;-;-;non
 14/10/2024;HÔTEL DE TOURISME;2 étoiles;-;-;HOTEL AR TERRA NOVA;8 rue godard;35400;SAINT-MALO;https://www.hotelarterranova.com/;-;36;17;-;-;-;non
 28/11/2025;HÔTEL DE TOURISME;3 étoiles;-;-;HOTEL ARBOR;158 route de Tours;72230;MULSANNE;http://www.hotel-arbor.fr;-;91;44;-;-;-;non
 27/05/2025;HÔTEL DE TOURISME;2 étoiles;-;-;HOTEL ARCOMBELLE;25 Avenue de Lierneux;52140;MONTIGNY LE ROI;http://hotel-arcombelle.com;-;51;23;-;-;-;non
 29/11/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HOTEL ARGIALE  - ARGHJALE;Poggiale;20114;FIGARI;www.argiale.com;-;16;4;-;-;-;non
 20/09/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HOTEL ARUM THE ORIGINALS;16 faubourg du Val d'Ajol;88200;REMIREMONT;https://www.theoriginalshotels.com/hotels/remiremont-arum;-;30;12;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;2 étoiles;-;-;HOTEL AU BORD DU LAC;2 rue de la digue;78470;SAINT-RÉMY-LÈS-CHEVREUSE;auborddulac.com;-;38;18;-;-;-;non
 18/10/2021;HÔTEL DE TOURISME;2 étoiles;-;-;HOTEL AU FEU DE BOIS;54 chemin du marche;38880;AUTRANS-MÉAUDRE EN VERCORS;https://www.hotelfeudebois.com/;-;28;10;-;-;-;non
 24/03/2025;HÔTEL DE TOURISME;1 étoile;-;-;HOTEL AU MOULIN DU PONT;1 MOULIN DU PONT;01580;SAMOGNAT;www.aumoulindupont.fr;-;24;9;-;-;-;non
 13/03/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HOTEL AUBERGE AUX 3 FRÊNES;Rue des 3 frênes;05480;VILLAR-D'ARÊNE;https://www.3frenes.com/;-;29;12;-;-;-;non
@@ -7708,7 +7711,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 09/01/2024;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL & SPA DU CHÂTEAU;123 avenue du Clavier;17140;LAGORD;https://www.hotel-du-chateau-la-rochelle.com/fr;-;40;20;-;-;-;non
 01/10/2025;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL & SPA EXCELSIOR CHAMONIX;251 Chemin Saint Roch;74400;CHAMONIX-MONT-BLANC;https://www.hotelexcelsior-chamonix.com/;-;157;79;-;-;-;non
 07/10/2024;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL & SPA FORT SAINT LAURENT - HANDWRITTEN COLLECTION;1B Place Bellevue;69001;LYON 1ER ARRONDISSEMENT;https://all.accor.com/hotel/C1U0/index.fr.shtml;-;91;35;-;-;-;non
-05/05/2021;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL & SPA GOLDEN TULIP;120 route des Macarons;06560;VALBONNE;https://sophia-antipolis.goldentulip.com/fr-fr/;-;204;80;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL & SPA GOLDEN TULIP;120 route des Macarons;06560;VALBONNE;https://sophia-antipolis.goldentulip.com/fr-fr/;-;204;80;-;-;-;non
 21/12/2023;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL & SPA HELIOPIC;50 place de l'Aiguille du Midi;74400;CHAMONIX-MONT-BLANC;https://www.heliopic-hotel-spa.com/;-;269;102;-;-;-;non
 28/08/2024;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL & SPA LA MALOUINIÈRE DES LONGCHAMPS;les longschamps;35430;SAINT-JOUAN-DES-GUÉRETS;http://www.hotel-spa-saintmalo.com/;-;18;9;-;-;-;non
 04/05/2022;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL & SPA LA VILLA KERASY;20 avenue Favrel et Lincy;56000;VANNES;https://www.villakerasy.com;-;28;14;-;-;-;non
@@ -7790,7 +7793,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 28/08/2025;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL ABSOLUE;2 RUE DE PARIS;58470;MAGNY-COURS;https://www.absolue-renaissance.fr;-;23;9;-;-;-;non
 24/05/2022;HÔTEL DE TOURISME;1 étoile;-;-;HÔTEL ABSOLUTE;1 rue de la Fontaine au Roi;75011;PARIS;https://www.absolutehotelparis.com/;-;77;38;-;-;-;non
 22/04/2021;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL AC BY MARRIOTT MARSEILLE VELODROME;4 allée Marcel Leclerc;13008;MARSEILLE 8E ARRONDISSEMENT;https://www.marriott.fr/hotels/travel/mrsar-ac-hotel-marseille-prado-velodrome/;-;252;126;-;-;-;non
-15/04/2021;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL AC BY MARRIOTT NICE;59 promenade des Anglais;06000;NICE;https://www.marriott.fr/hotels/travel/nceac-ac-hotel-nice/;-;310;143;-;-;-;non
+15/04/2021;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL AC BY MARRIOTT NICE;59 promenade des Anglais;06000;NICE;https://www.marriott.fr/hotels/travel/nceac-ac-hotel-nice/;-;310;143;-;-;-;oui
 31/10/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL ACACIA;2 RUE DE L'ECOSSEUSE;54300;MONCEL-LÈS-LUNÉVILLE;https://www.hotel-acacia-nancy-sud.fr/;-;85;38;-;-;-;non
 24/01/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL ACACIAS ÉTOILE;11 rue des Acacias;75017;PARIS 17E ARRONDISSEMENT;https://www.arcotel-acaciasetoile.com/;-;62;36;-;-;-;non
 02/11/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL ACADEMIE;7 RUE DES MICHOTTES;54000;NANCY;https://hotelacademienancy.com/;-;50;29;-;-;-;non
@@ -8257,7 +8260,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 06/11/2025;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL AUBERGE DU MORVAN THE LITTLE PUB RANCH LOS MOSQUEROS;Le Bourg;58230;ALLIGNY-EN-MORVAN;https://www.aubergedumorvan.fr/l-h%C3%B4tel/;-;15;6;-;-;-;non
 15/03/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL AUBERGE DU PORT;Port de Bazeilles;08450;REMILLY-AILLICOURT;https://aubergeduport08.fr/fr/;-;40;20;-;-;-;non
 13/03/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL AUBERGE DU REDIER;quartier du redier;06670;COLOMARS;https://aubergeduredier.com/;-;52;23;-;-;-;non
-15/04/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL AUBERGE DU RELAIS;460 Grande Route;64300;BÉRENX;https://auberge-du-relais.com/;-;44;19;-;-;-;non
+15/04/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL AUBERGE DU RELAIS;460 Grande Route;64300;BÉRENX;https://auberge-du-relais.com/;-;44;19;-;-;-;oui
 08/07/2021;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL AUBERGE DU ROUA;46 chemin du Roua;66700;ARGELÈS-SUR-MER;http://www.aubergeduroua.com/;-;48;20;-;-;-;non
 16/12/2025;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL AUBERGE FERAYOLA;lieu-dit Argentella;20245;GALÉRIA;www.ferayola.com;-;36;17;-;-;-;non
 22/07/2025;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL AUBERGE KALLISTÉ;Porto Pollo;20140;SERRA-DI-FERRO;https://www.auberge-kalliste.corsica/;-;36;16;-;-;-;non
@@ -8920,7 +8923,6 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 17/09/2024;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL CABANE;76 rue Raymond Losserand;75014;PARIS 14E ARRONDISSEMENT;https://www.orsohotels.com/hotel-cabane;-;86;43;-;-;-;non
 22/12/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL CACTUS;47 Rue des volontaires;75015;PARIS 15E ARRONDISSEMENT;https://hotelcactusparis.com/;-;58;29;-;-;-;non
 17/04/2024;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL CAFÉ DE PARIS;12 avenue gambetta;12700;CAPDENAC-GARE;https://www.hoteldeparis-capdenac.fr/;-;44;14;-;-;-;non
-15/04/2021;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL CAFÉ DE PARIS;16 cours du Général De Gaulle;33340;LESPARRE-MÉDOC;https://www.hoteldeparislesparremedoc.fr/;-;19;9;-;-;-;non
 15/03/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL CAFÉ MIRAMAR;25 avenue Frédéric Mistral;30240;LE GRAU-DU-ROI;https://www.cafe-miramar.fr/;-;40;17;-;-;-;non
 23/12/2022;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL CALA DI GRECO;Lieu-Dit Bancarello;20169;BONIFACIO;http://www.location-bonifacio.com;-;36;18;-;-;-;non
 23/06/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL CALA DI SOLE;Route des Sanguinaires;20000;AJACCIO;https://www.caladisole.fr/;-;80;34;-;-;-;non
@@ -9254,7 +9256,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 14/10/2025;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL CASIMIR;184 Rue de Courcelles;75017;PARIS 17E ARRONDISSEMENT;https://www.hotelcasimir.com/;-;81;40;-;-;-;non
 12/12/2024;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL CASINO DES PALMIERS;1 Avenue Ambroise Thomas;83400;HYÈRES;http://www.hotelcasinohyeres.fr;-;32;16;-;-;-;non
 26/04/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL CASITA DEL MAR;13 rue Pouvreau;85160;SAINT-JEAN-DE-MONTS;https://www.casita-delmar.com;-;35;12;-;-;-;non
-01/12/2021;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL CASSITEL;Place Georges Clémenceau;13260;CASSIS;https://www.cassitel.com/#;-;65;32;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL CASSITEL;Place Georges Clémenceau;13260;CASSIS;https://www.cassitel.com/#;-;65;32;-;-;-;non
 09/03/2022;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL CASTEL BEAU SITE;Plage de Saint Guirec;22700;PERROS-GUIREC;https://www.castelbeausite.com/;-;66;33;-;-;-;non
 20/12/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL CASTEL BURGOND;3 route de troyes;21121;DAIX;http://hotel-dijon-castel-burgond.com;-;111;46;-;-;-;non
 11/10/2022;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL CASTEL CLARA THALASSO & SPA;port goulphar;56360;BANGOR;https://www.castel-clara.com/;-;156;66;-;-;-;non
@@ -9522,7 +9524,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 17/10/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL CLÉRIA;27 Boulevard Franchet-d'Esperey;56100;LORIENT;http://www.hotel-cleria.com;-;71;33;-;-;-;non
 22/04/2024;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL COCO BEACH RESORT;route des basses, grand-bourg;97112;GRAND-BOURG;www.cocobeachmariegalante.com;-;33;10;-;-;-;non
 24/10/2024;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL COCO ISLAND;21 avenue de la Mer;97460;SAINT-PAUL;https://www.coco-island.re/;-;47;22;-;-;-;non
-31/05/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL COCOON INN;20 place Verte;62780;CUCQ;https://cocooninnhotel.com/fr/;-;32;16;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL COCOON INN;20 place Verte;62780;CUCQ;https://cocooninnhotel.com/fr/;-;62;28;-;-;-;non
 14/09/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL CODALYSA;2 rue Charlie Chaplin;77200;TORCY;http://interhotel-codalysa.fr/;-;197;95;-;-;-;non
 06/07/2022;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL COEUR DE LOIRE;3 rue Anatole Le Braz;44000;NANTES;https://coeurdeloirehotel.com/;-;30;15;-;-;-;non
 28/10/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL COEUR DES NEIGES;64 chemin du Vieux Pont;74170;SAINT-GERVAIS-LES-BAINS;https://hotelcoeurdesneiges.com/;-;34;15;-;-;-;non
@@ -9652,7 +9654,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 12/09/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL D'ANJOU;47 rue Louis Rouquier;92300;LEVALLOIS-PERRET;https://www.hotel-anjou-paris.fr/fr/index.html;-;99;47;-;-;-;non
 05/02/2025;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL D'ANJOU;1 Boulevard du Maréchal Foch;49100;ANGERS;http://www.hoteldanjou.fr/;-;110;54;-;-;-;non
 16/09/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL D'ARAGON;10 rue Baudin;34000;MONTPELLIER;http://www.hotel-aragon.fr;-;22;12;-;-;-;non
-09/01/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL D'ARGENSON;15 rue d'argenson;75008;PARIS 8E ARRONDISSEMENT;https://www.hotelargenson.com/fr/;-;72;29;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL D'ARGENSON;15 rue d'argenson;75008;PARIS 8E ARRONDISSEMENT;https://www.hotelargenson.com/fr/;-;72;34;-;-;-;non
 05/04/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL D'ARGOUGES;21 rue Saint-Patrice;14400;BAYEUX;http://www.hotel-dargouges.com/;-;66;28;-;-;-;non
 23/08/2021;HÔTEL DE TOURISME;5 étoiles;-;-;HÔTEL D'AUBUSSON;33 rue Dauphine;75006;PARIS 6E ARRONDISSEMENT;https://www.hoteldaubusson.com/fr/;-;116;50;-;-;-;non
 12/02/2024;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL D'AVALLON VAUBAN;53 rue de Paris;89200;AVALLON;http://www.avallonvaubanhotel.com;-;70;28;-;-;-;non
@@ -9775,6 +9777,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 07/08/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL DE FRANCE;2 place du général de Gaulle;62300;LENS;www.hoteldefrancelens.com;-;45;21;-;-;-;non
 23/03/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DE FRANCE;Place Émile Loubet;26740;MARSANNE;https://www.hotel-de-france-marsanne.fr/nos-chambres/;-;21;9;-;-;-;non
 10/05/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DE FRANCE;29 rue des Minimes;29250;SAINT-POL-DE-LÉON;https://www.hotel-saint-pol.fr/;-;36;16;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;1 étoile;-;-;HÔTEL DE FRANCE;75 ALLEES LARBANES;65700;MAUBOURGUET;http://restauranthoteldefrance.fr;-;14;7;-;-;-;non
 20/03/2025;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL DE FRANCE - RESTAURANT LE LUCULLUS;4 boulevard de strasbourg;86500;MONTMORILLON;https://www.hoteldefrance-lelucullus.fr/;-;78;36;-;-;-;non
 07/12/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DE FRANCE ET D'EUROPE;9 Avenue de la gare;29900;CONCARNEAU;http://www.hotel-france-europe.com;-;49;22;-;-;-;non
 07/11/2022;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL DE FRANCE ET DE GUISE;3 rue Gallois;41000;BLOIS;http://www.hotel-france-guise.com;-;115;50;-;-;-;non
@@ -10304,7 +10307,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 16/03/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DES MESSAGERIES;Rue des Messageries;17100;SAINTES;https://hotel-des-messageries.com/;-;78;33;-;-;-;non
 16/10/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DES MESSAGERIES;2 rue de Courcelles;39600;ARBOIS;http://www.hoteldesmessageries.com;-;43;18;-;-;-;non
 27/06/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DES MIMOSAS;62 chemin de la Colle;06160;JUAN LES PINS;https://www.hotelmimosas.com/;-;71;34;-;-;-;non
-26/03/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DES MINES;125 boulevard Saint-Michel;75005;PARIS 5E ARRONDISSEMENT;https://www.hotel-desmines-paris.com/fr/;-;89;49;-;-;-;oui
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DES MINES;125 boulevard Saint-Michel;75005;PARIS 5E ARRONDISSEMENT;https://www.hotel-desmines-paris.com/fr/;-;99;49;-;-;-;non
 07/12/2022;HÔTEL DE TOURISME;1 étoile;-;-;HÔTEL DES MOULINS;3 traverse des charmettes;13190;ALLAUCH;http://www.hotel-des-moulins.com;-;29;12;-;-;-;non
 18/02/2025;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DES MÉTALLOS;50 rue de la Folie Méricourt;75011;PARIS 11E ARRONDISSEMENT;http://www.hoteldesmetallos.com/;-;54;31;-;-;-;non
 19/04/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DES NACRES;Pont du Travo;20240;VENTISERI;http://www.hoteldesnacres.fr/;-;41;15;-;-;-;non
@@ -10469,6 +10472,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 18/07/2022;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL DOMAINE DUTILLEUL;Départementale 988;81310;LISLE-SUR-TARN;https://domainedutilleul.com/;-;18;8;-;-;-;non
 26/11/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DOMAINE GAO;1075 chemin du Mont Robert;13290;AIX-EN-PROVENCE;https://www.domainegao.com/;-;44;18;-;-;-;non
 15/05/2025;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DOMAINE LA GENTILHOMMIÈRE;Route de Lalouvesc;07290;SATILLIEU;http://www.la-gentilhommiere.com;-;183;68;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL DOMAINE LA PIERRE BLANCHE;2950 route d'Orgon;13810;EYGALIÈRES;WWW.DOMAINELAPIERREBLANCHE.COM;-;34;15;-;-;-;non
 27/06/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DOMAINE LE MARTINET;Place du Général Charette;85230;BOUIN;http://www.domaine-lemartinet.com;-;46;23;-;-;-;non
 24/07/2025;HÔTEL DE TOURISME;5 étoiles;-;-;HÔTEL DOMAINE LE MOUFLON D'OR;route de levie;20124;ZONZA;http://www.lemouflondor.com;-;64;22;-;-;-;non
 13/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DOMAINE MALAR;1 rue de mondésir;91690;GUILLERVAL;https://www.domainemalar91.com;-;103;43;-;-;-;non
@@ -10701,6 +10705,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 20/05/2025;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL DU NORD;8 rue Moncey;25000;BESANÇON;http://www.hotel-du-nord-besancon.com/fr;-;111;44;-;-;-;non
 03/04/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DU NORD;1 place de la gare;60200;COMPIÈGNE;https://www.hoteldunordcompiegne.com;-;42;20;-;-;-;non
 02/05/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL DU NORD;18 rue des lacs;15100;SAINT-FLOUR;https://www.hoteldunord-saintflour.com/;-;63;29;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL DU NORD;5 rue des maréchaux;71150;FONTAINES;http://www.hotel-du-nord-fontaines.com;-;22;8;-;-;-;non
 05/01/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL DU PALAIS;69 rue nationale;74500;ÉVIAN-LES-BAINS;http://hoteldupalaisevian.com;-;72;36;-;-;-;non
 03/10/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DU PALAIS;4 place francis louvel;16000;ANGOULÊME;http://www.hotel-angouleme.fr;-;96;43;-;-;-;non
 07/09/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL DU PALAIS;3 rue du Palais des Guilhem;34000;MONTPELLIER;http://www.hoteldupalais-montpellier.fr;-;45;25;-;-;-;non
@@ -11067,7 +11072,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 02/04/2024;HÔTEL DE TOURISME;5 étoiles;-;-;HÔTEL FITZ ROY;Place de l'Eglise;73400;VAL THORENS;https://www.beaumier.com/fr/proprietes/hotel-le-fitz-roy/;-;170;72;-;-;-;non
 12/06/2024;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL FLANELLES;11 Rue De Dunkerque;75010;PARIS;https://hotelflanelles.fr/;-;94;44;-;-;-;non
 04/11/2022;HÔTEL DE TOURISME;5 étoiles;-;-;HÔTEL FLEUR DE LOIRE;Quai Villebois Mareuil;41000;BLOIS;https://fleurdeloire.com/fr/?utm_source=MyBusiness;-;113;44;-;-;-;non
-06/04/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL FLEUR DE RÉ;13 route de Pertuis;17111;LOIX;https://www.fleurdere.com/;-;66;24;-;-;-;oui
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL FLEUR DE RÉ;13 route de Pertuis;17111;LOIX;https://www.fleurdere.com/;-;65;24;-;-;-;non
 07/11/2022;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL FLEUR DE SEL;10 Rue des saulniers;85330;NOIRMOUTIER-EN-L'ÎLE;http://www.fleurdesel.fr;-;75;33;-;-;-;non
 25/11/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL FLEUR D’ÉPÉE;49 Impasse de Bas du Fort;97190;LE GOSIER;http://hotel-fleur-depee.com;-;513;187;-;-;-;non
 30/09/2024;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL FLOR;saint-florent;20217;SAINT-FLORENT;www.hotel-flor.com;-;69;32;-;-;-;non
@@ -12097,7 +12102,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 29/09/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL IBIS STYLES MARENNES OLÉRON;20 rue des droits de l'homme;17320;MARENNES;https://www.accorhotels.com/fr/hotel-9493-ibis-styles-marennes-oleron/index.shtml;-;104;40;-;-;-;non
 16/11/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL IBIS STYLES MARSEILLE CASTELLANE;31 rue du Rouet;13006;MARSEILLE;https://all.accor.com/hotel/7974/index.fr.shtml;-;96;53;-;-;-;non
 19/11/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL IBIS STYLES MARSEILLE PLAN DE CAMPAGNE;Zone Commerciale Plan de Campagne;13170;LES PENNES-MIRABEAU;https://all.accor.com/hotel/B2C6/index.fr.shtml;-;130;60;-;-;-;non
-12/05/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL IBIS STYLES MARSEILLE PROVENCE AÉROPORT;24 rue de Madrid;13127;VITROLLES;https://all.accor.com/hotel/0442/index.fr.shtml;-;286;117;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL IBIS STYLES MARSEILLE PROVENCE AÉROPORT;24 rue de Madrid;13127;VITROLLES;https://all.accor.com/hotel/0442/index.fr.shtml;-;263;117;-;-;-;non
 07/02/2019;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL IBIS STYLES MARSEILLE VIEUX PORT;7-9 Cours Saint louis;13001;MARSEILLE;https://www.accorhotels.com/fr/hotel-A0X9-ibis-styles-marseille-vieux-port/index.shtml;-;92;52;-;-;-;oui
 01/07/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL IBIS STYLES MASSY OPÉRA;6 rue de L'Opéra;91300;MASSY;https://all.accor.com/hotel/B3A2/index.fr.shtml;-;237;111;-;-;-;non
 26/04/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL IBIS STYLES MAYOTTE AEROPORT;05 Rue Gnoumakouni;97615;PAMANDZI;https://all.accor.com/hotel/B804/index.fr.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps;-;164;82;-;-;-;non
@@ -12505,7 +12510,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 28/11/2024;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL KYRIAD ECO NARBONNE SUD;224 Rue d'Espagne;11100;NARBONNE;https://direct-narbonne-sud.kyriad.com/fr-fr/;-;130;64;-;-;-;non
 03/03/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL KYRIAD FONTENAY-TRESIGNY;114 rue Bertaux;77610;FONTENAY-TRÉSIGNY;https://fontenay-tresigny.kyriad.com/fr-fr/;-;138;61;-;-;-;non
 01/03/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL KYRIAD GRENOBLE CENTRE;116 cours de la Libération;38100;GRENOBLE;https://grenoble-centre.kyriad.com/fr-fr/;-;112;56;-;-;-;non
-21/04/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL KYRIAD ISSOUDUN;Les Coinchettes;36100;ISSOUDUN;https://issoudun.kyriad.com/fr-fr/;-;90;45;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL KYRIAD ISSOUDUN;Les Coinchettes;36100;ISSOUDUN;https://issoudun.kyriad.com/fr-fr/;-;90;45;-;-;-;non
 04/09/2025;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL KYRIAD KIMPER SUD;6 allée pierre jolivet;29000;QUIMPER;https://quimper-sud.kyriad.com/fr-fr/?sr=OTHER#L'H%C3%B4tel;-;78;42;-;-;-;non
 16/04/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL KYRIAD LA GARDE-SAINT CHELY D'APCHER;Aire de La Garde;48200;ALBARET-SAINTE-MARIE;https://saint-chely-apcher.kyriad.com/fr-fr/;-;107;52;-;-;-;non
 17/12/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL KYRIAD LA ROCHE-SUR-YON;Boulevard Arago;85000;LA ROCHE-SUR-YON;https://la-roche-sur-yon.kyriad.com/fr-fr/;-;130;65;-;-;-;non
@@ -13479,6 +13484,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 18/04/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE 21;21 place Galliéni;83700;SAINT-RAPHAËL;https://www.le21-hotel.com/;-;48;28;-;-;-;non
 07/06/2024;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE 23;23 rue principale;33210;SAUTERNES;hotelsauternesle23.fr;-;20;8;-;-;-;non
 12/05/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE 25;25 rue Sacchetti;33510;ANDERNOS-LES-BAINS;https://www.hotel-le25.com/;-;54;25;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;5 étoiles;-;-;HÔTEL LE 3 PAR CHAMPAGNE THIENOT;3 rue du Marc;51100;REIMS;https://www.champagne-thienot.com/experience-oenotouristique/boutique-hotel-spa-reims/;-;29;13;-;-;-;non
 13/06/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE 46;46 rue Brunel;75017;PARIS 17E ARRONDISSEMENT;https://le46hotel-paris.com/;-;67;32;-;-;-;non
 08/02/2022;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL LE 5 PARTICULIER;5 rue Paul Déroulède;92200;NEUILLY-SUR-SEINE;https://www.le5particulier.com/;-;62;29;-;-;-;non
 26/04/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE 55 MONTPARNASSE;55 rue de Plaisance;75014;PARIS 14E ARRONDISSEMENT;https://www.55montparnasse.com/;-;78;40;-;-;-;non
@@ -13558,7 +13564,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 17/03/2026;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE BOISCHAUT;135 avenue de la Châtre;36000;CHÂTEAUROUX;https://www.restaurant-hotel-chateauroux.com/fr;-;62;27;-;-;-;non
 13/07/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE BON ACCUEIL;1 chemin de la Grande Source;25160;MALBUISSON;http://www.le-bon-accueil.fr;-;24;12;-;-;-;non
 14/06/2024;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE BON CAP;10 rue de Montangué;22240;PLURIEN;http://www.hotel-le-bon-cap.com/;-;26;11;-;-;-;non
-15/04/2021;HÔTEL DE TOURISME;1 étoile;-;-;HÔTEL LE BON COIN;41 rue Nationale;28220;CLOYES-SUR-LE-LOIR;https://www.hotel-restaurant-bar-auboncoin.fr/;-;12;6;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;1 étoile;-;-;HÔTEL LE BON COIN;41 rue Nationale;28220;CLOYES-SUR-LE-LOIR;https://www.hotel-restaurant-bar-auboncoin.fr/;-;12;6;-;-;-;non
 05/09/2024;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE BON LABOUREUR;quai romain mollot;58400;LA CHARITÉ-SUR-LOIRE;www.lebonlaboureur.com;-;36;16;-;-;-;non
 18/08/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE BON PORT;12 route de Port-Vendres;66190;COLLIOURE;https://www.bon-port.com/;-;48;20;-;-;-;non
 22/07/2022;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE BON REPOS;79 avenue Félix Gaillard;16300;BARBEZIEUX-SAINT-HILAIRE;https://www.lebonrepos-barbezieux.fr/;-;31;15;-;-;-;non
@@ -13619,7 +13625,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 30/03/2022;HÔTEL DE TOURISME;5 étoiles;-;-;HÔTEL LE CARLINA;180 rue de Bellecote;73120;COURCHEVEL;https://www.hotelcarlina.com/;-;134;61;-;-;-;non
 03/12/2021;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE CARNON RESTAURANT KAZANIS;9 place Cassan;34130;MAUGUIO;https://www.hotel-carnon.com/;-;33;15;-;-;-;non
 26/10/2022;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE CARNOT;10 place charles de gaulle;76210;BOLBEC;http://lecarnot.fr;-;22;10;-;-;-;non
-11/12/2020;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE CARRE D'ALETHUIS;4 rue Paul Bertois;07800;CHARMES-SUR-RHÔNE;http://www.lecarredalethius.com;-;19;9;-;-;-;oui
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE CARRE D'ALETHUIS;4 rue Paul Bertois;07800;CHARMES-SUR-RHÔNE;http://www.lecarredalethius.com;-;18;9;-;-;-;non
 29/07/2022;HÔTEL DE TOURISME;1 étoile;-;-;HÔTEL LE CARROSSE;88 rue Desnouette;75015;PARIS 15E ARRONDISSEMENT;https://www.le-carrosse.fr;-;20;12;-;-;-;non
 03/04/2024;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE CASABIANCA;39 place Jean Moulin;03000;MOULINS;https://www.hotel-casabianca.fr/;-;28;12;-;-;-;non
 27/04/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE CASTEL;1 rue Louis Moron;49320;BRISSAC-QUINCÉ;https://www.hotel-lecastel.com/;-;24;11;-;-;-;non
@@ -13863,6 +13869,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 09/07/2024;HÔTEL DE TOURISME;1 étoile;-;-;HÔTEL LE CONTINENTAL;rue du victor basch;83400;HYÈRES;https://www.igesa.fr/vos-vacances/recherche-sejour/reserver-mes-vacances/etablissement/hyeres-hotel-le-continental;-;156;78;-;-;-;non
 24/03/2025;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE COQ D'OR;2 place du coq d'or;66210;LES ANGLES;https://hotel-lecoqdor.fr/;-;84;23;-;-;-;non
 03/01/2024;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE COQ D'OR;18 Place du Château;17500;JONZAC;lecoqdor.eu;-;10;5;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE COQUELICOT;24 rue du pont d'aspach;68520;BURNHAUPT-LE-HAUT;https://www.logishotels.com/fr/hotel/logis-hotel-le-coquelicot-2739;-;63;26;-;-;-;non
 28/03/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE CORBUSIER;280 boulevard Michelet;13008;MARSEILLE 8E ARRONDISSEMENT;https://www.hotellecorbusier.com/;-;52;21;-;-;-;non
 26/01/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE CORNOUAILLE;62 avenue de la Plage;29950;BÉNODET;https://le-cornouaille-hotel.com/;-;53;22;-;-;-;non
 04/04/2024;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE CORSAIRE II;1273 route départementale 559;83380;LES ISSAMBRES;http://www.hotelcorsaire2.fr/;-;16;8;-;-;-;non
@@ -13888,6 +13895,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 26/06/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE CRO-BIDOU;1101 Route de la plage, La Beunaz;74500;SAINT-PAUL-EN-CHABLAIS;http://www.hoteldecharmepaysduleman.com/;-;42;15;-;-;-;non
 23/04/2024;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE CRO-MAGNON;54 Avenue de la préhistoire;24620;LES EYZIES-DE-TAYAC-SIREUIL;http://www.hotel-cromagnon.com/;-;33;15;-;-;-;non
 22/05/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE CROISEUR;2 place de la poissonnerie;35400;SAINT-MALO;http://www.hotel-le-croiseur.com;-;29;14;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE CROISEUR GINETTE;2 place de la poissonnerie;35400;SAINT-MALO;https://www.lecroiseur-ginette.com/;-;28;14;-;-;-;non
 17/03/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE CRYSTAL;15 rue de la Malouine;35800;DINARD;https://www.crystal-hotel.com/;-;46;19;-;-;-;non
 07/10/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE CRÊT-ROND;Route du Galibier;73450;VALLOIRE;http://www.hotelcretrond.com;-;42;17;-;-;-;non
 19/10/2021;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE CYGNE;20 rue Notre Dame;76220;GOURNAY-EN-BRAY;http://fr.hotellecygne.fr/;-;59;27;-;-;-;non
@@ -14658,6 +14666,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 25/01/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE RELAIS DU GRAND SOM;336 route du Dauphiné;38380;SAINT-PIERRE-D'ENTREMONT;http://www.hotel-legrandsom.com/;-;18;9;-;-;-;non
 21/11/2024;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE RELAIS DU HAUT LIMOUSIN;2 boulevard Karl Marx;87120;EYMOUTIERS;http://www.relaisduhautlimousin.com/;-;22;9;-;-;-;non
 20/06/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE RELAIS DU LAC;8 place Jean Robinet;52190;VILLEGUSIEN-LE-LAC;https://relaisdulac.eu;-;22;10;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE RELAIS DU LAC;1675 AVENUE DU TOURING CLUB DE FRANCE;40150;SOORTS-HOSSEGOR;www.hotelrelaisdulac.fr;-;62;27;-;-;-;non
 10/07/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE RELAIS DU LOIR;40 promenade du marechal foch;72200;LA FLÈCHE;https://www.hotelrelaisduloir.com/;-;58;25;-;-;-;non
 24/03/2022;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL LE RELAIS DU LOUVRE;19 rue des Prêtres Saint-Germain l'Auxerrois;75001;PARIS 1ER ARRONDISSEMENT;https://www.relaisdulouvre.com/;-;42;21;-;-;-;non
 15/10/2025;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE RELAIS DU LUBÉRON;360 quai des Entreprises;84660;MAUBEC;http://www.relaisduluberon.com;-;18;8;-;-;-;non
@@ -14722,6 +14731,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 30/01/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE ROCHELOIS;66 Boulevard Winston Churchill;17000;LA ROCHELLE;http://www.le-rochelois.fr;-;95;38;-;-;-;non
 18/11/2024;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE ROCHER;2 BOULEVARD WILSON;20260;CALVI;www.hotel-le-rocher.com;-;54;20;-;-;-;non
 29/11/2024;HÔTEL DE TOURISME;1 étoile;-;-;HÔTEL LE ROCHER;141 avenue de lattre de tassigny;13009;MARSEILLE;https://hotellerocher.fr;-;67;32;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE ROCHER DU CERF;4 lotissement Rocher du Cerf;15300;LE LIORAN;www.lerocherducerf.com;-;168;55;-;-;-;non
 24/06/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE ROCHER DU SECRET;Corniche du PinPignon;83400;HYÈRES;https://www.lerocherdusecret.com/;-;32;16;-;-;-;non
 25/06/2024;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL LE ROCROY;13 RUE DE ROCROY;75010;PARIS;https://www.lerocroy.com/fr/;-;118;48;-;-;-;non
 20/10/2022;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL LE RODIN;20 rue Rodin;13200;ARLES;https://www.hotel-lerodin.fr/;-;76;28;-;-;-;non
@@ -14943,6 +14953,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 17/03/2022;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LE VIEUX CARRÉ;34 rue Ganterie;76000;ROUEN;https://www.hotel-vieux-carre.com/;-;25;12;-;-;-;non
 24/10/2024;HÔTEL DE TOURISME;5 étoiles;-;-;HÔTEL LE VIEUX CASTILLON;10 rue Turion Sabatier;30210;CASTILLON-DU-GARD;http://www.vieuxcastillon.fr;-;68;34;-;-;-;non
 12/04/2024;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL LE VIEUX CHALET;309 route du Crêt du merle;74220;LA CLUSAZ;http://levieuxchalet.fr;-;18;7;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE VIEUX FUSIL;les Marnières du Moulin à Vent, 1140 route de Contres 1140 route de Contres;41230;SOINGS-EN-SOLOGNE;http://www.levieuxfusil.fr/;-;36;12;-;-;-;non
 24/10/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE VIEUX GRÉEMENT;13 Place Carnot;17670;LA COUARDE-SUR-MER;https://www.levieuxgreement.com/;-;42;19;-;-;-;non
 14/04/2023;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL LE VIEUX LOGIS;Le Bourg;24510;TRÉMOLAT;https://www.vieux-logis.com/;-;50;25;-;-;-;non
 02/02/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LE VIEUX LOGIS;Route des Grottes;64800;LESTELLE-BÉTHARRAM;https://www.hotel-levieuxlogis.com/;-;72;32;-;-;-;non
@@ -15355,7 +15366,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 19/07/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LES RESTANQUES DE MOUSTIERS;route des gorges du verdon;04360;MOUSTIERS-SAINTE-MARIE;https://www.hotel-les-restanques.com/;-;51;22;-;-;-;non
 26/07/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LES RIVAGES DE BEAUVAL;67 RUE ROUGET DE LISLE;41110;SAINT-AIGNAN;https://www.zoobeauval.com/dormir-a-beauval/hotel-les-rivages-de-beauval;-;438;138;-;-;-;non
 05/04/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LES RIVES;244 rue de la République;68500;GUEBWILLER;https://www.domainedulac-alsace.com;-;66;33;-;-;-;non
-23/06/2021;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LES RIVES BLEUES;3 PLACE DE L'EGLISE;34280;LA GRANDE-MOTTE;www.hotel-lesrivesbleues.com;-;117;51;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LES RIVES BLEUES;3 PLACE DE L'EGLISE;34280;LA GRANDE-MOTTE;www.hotel-lesrivesbleues.com;-;117;51;-;-;-;non
 02/12/2022;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL LES RIVES DE NOTRE DAME;15 quai Saint Michel;75005;PARIS;https://www.rivesdenotredame.com/;-;25;10;-;-;-;non
 29/07/2024;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LES RIVES DU LOUP;2666 bis route de la colle;06140;TOURRETTES-SUR-LOUP;www.rivesduloup.com;-;19;9;-;-;-;non
 04/03/2025;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL LES RIVES DU PLANTIÉ;route de castelmoron;47110;LE TEMPLE-SUR-LOT;www.lesrivesduplantie.com;-;20;10;-;-;-;non
@@ -15458,7 +15469,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 14/01/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LES ÉCUREUILS;431 route de la Vallée du Bouchet;74450;LE GRAND-BORNAND;https://www.hotel-les-ecureuils.com/;-;43;17;-;-;-;non
 16/12/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LES ÉCURIES DE LA TOUR;3 route de Toulouse;31700;MONDONVILLE;https://www.lesecuriesdelatour.fr/;-;33;15;-;-;-;non
 30/11/2022;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL LES ÉTANGS DE COROT;55 rue de versailles;92410;VILLE-D'AVRAY;http://www.etangs-corot.com/;-;95;42;-;-;-;non
-07/07/2021;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LES ÉTOILES DU FOREZ;4 rue des Métiers;42600;SAVIGNEUX;https://www.lesetoilesduforez.com/;-;68;30;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL LES ÉTOILES DU FOREZ;4 rue des Métiers;42600;SAVIGNEUX;https://www.lesetoilesduforez.com/;-;70;30;-;-;-;non
 20/10/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LES ÎLES DE CLOVIS;Le Puy du Fou;85590;LES EPESSES;https://www.puydufou.com/france/fr/les-%C3%8Eles-de-clovis;-;476;100;-;-;-;non
 01/07/2022;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL LESDIGUIÈRES;122 Cours de la Libération et du Général de Gaulle;38000;GRENOBLE;https://www.hotellesdiguieres.com/en/;-;40;20;-;-;-;non
 13/06/2024;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL LEVOLLE MARINE;lieu dit levolle Sottana;20230;POGGIO MEZZANA;https://www.levollemarine.com/fr/;-;24;12;-;-;-;non
@@ -15597,7 +15608,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 25/09/2023;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL MADEMOISELLE;7 Rue des Petits Hôtels;75010;PARIS;https://hotel-mademoiselle-paris.com/fr/;-;125;53;-;-;-;non
 22/07/2025;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL MADEMOISELLE;12 avenue docteur dautheville;06160;JUAN LES PINS;www.hotelmademoisellejuan.com;-;30;13;-;-;-;non
 04/06/2024;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL MADISON SAINT JEAN DE LUZ;25 boulevard thiers;64500;SAINT-JEAN-DE-LUZ;www.madison-saintjeandeluz.com;-;79;35;-;-;-;non
-24/06/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL MADRIGAL;32 boulevard Pasteur;75015;PARIS;https://www.hotel-madrigal.com/;-;99;50;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL MADRIGAL;32 boulevard Pasteur;75015;PARIS;https://www.hotel-madrigal.com/;-;115;50;-;-;-;non
 14/10/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL MAGDA CHAMPS ÉLYSÉES;7 rue Troyon;75017;PARIS 17E ARRONDISSEMENT;https://www.arcotel-magdachampselysees.com/;-;92;37;-;-;-;non
 14/01/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL MAGENTA 38;38 boulevard de Magenta;75010;PARIS 10E ARRONDISSEMENT;https://hotelmagenta38.com/fr/;-;145;67;-;-;-;non
 06/02/2023;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL MAGIC CIRCUS PARIS II;20 avenue de la Fosse des Pressoirs;77700;MAGNY-LE-HONGRE;http://www.magiccircus-hotel.com;-;1440;396;-;-;-;non
@@ -16918,7 +16929,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 01/04/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL RESTAURANT AU CHEVAL BLANC;122 grand rue;68150;RIBEAUVILLÉ;https://www.hotel-restaurant-ribeauville.com/;-;44;19;-;-;-;non
 15/11/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL RESTAURANT AU CHÊNE VERT;2 rue de la croix lormel;22190;PLÉRIN;http://www.hotel-st-brieuc.fr/;-;165;68;-;-;-;non
 21/11/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL RESTAURANT AU CYGNE;38 rue de la Première Division Blindée;67114;ESCHAU;http://www.cygne-eschau.com/;-;54;24;-;-;-;non
-25/05/2021;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL RESTAURANT AU FIN GOURMET;1 place du Pilori;44490;LE CROISIC;https://www.fingourmetcroisic.fr/;-;22;9;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL RESTAURANT AU FIN GOURMET;1 place du Pilori;44490;LE CROISIC;https://www.fingourmetcroisic.fr/;-;20;9;-;-;-;non
 11/12/2020;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL RESTAURANT AU FLORIDOR;54 Rue du Floridor;68800;THANN;https://www.hotel-floridor-thann.com/;-;32;16;-;-;-;oui
 05/04/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL RESTAURANT AU LION D'OR;1 pont d'aspach;68520;BURNHAUPT-LE-HAUT;https://www.auliondor68.fr/fr/hotel/;-;47;23;-;-;-;non
 14/10/2024;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL RESTAURANT AU LION ROUGE;1 rue Général de Gaulle;68870;BARTENHEIM;http://www.lion-rouge.fr;-;52;24;-;-;-;non
@@ -17372,6 +17383,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 10/06/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL RESTAURANT LES ROCHERS;24 route de Paris;74330;LA BALME-DE-SILLINGY;https://www.hotellesrochers.fr/;-;50;20;-;-;-;non
 19/10/2021;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL RESTAURANT LES SAPINS;131 la Vieille Route;74490;SAINT-JEOIRE;https://www.lessapins74.fr/;-;20;9;-;-;-;non
 19/07/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL RESTAURANT LES SOLDANELLES;106 Rue des chasseurs alpins;73300;LA TOUSSUIRE;https://www.hotelsoldanelles.com/;-;81;38;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL RESTAURANT LES SOURCES DE LA NIVE;QUARTIER BéHéROBIE;64220;ESTÉRENÇUBY;http://www.hotelsourcesdelanive.com;-;57;25;-;-;-;non
 09/01/2024;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL RESTAURANT LES TERRASSES;2 rue de la glacière;02600;LONGPONT;https://www.logishotels.com/fr/hotel/logis-hotel-les-terrasses-201863;-;19;9;-;-;-;non
 26/07/2023;HÔTEL DE TOURISME;1 étoile;-;-;HÔTEL RESTAURANT LES TERRASSES;18 avenue de provence;05300;LARAGNE-MONTÉGLIN;lesterrasseslaragne.fr;-;23;10;-;-;-;non
 08/11/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL RESTAURANT LES TILLEULS;10 RUE BARBIERE;39700;ROCHEFORT-SUR-NENON;https://lestilleuls-hotel.fr/;-;31;15;-;-;-;non
@@ -17607,7 +17619,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 14/06/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL SAINT-ANDRÉ;418 allée de la mer;83350;RAMATUELLE;http://www.hotel-st-andre.fr/;-;65;30;-;-;-;non
 25/06/2021;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL SAINT-ANDRÉ DES ARTS;66 rue Saint-André des Arts;75006;PARIS 6E ARRONDISSEMENT;https://www.saintandredesarts.com/fr/;-;68;30;-;-;-;non
 27/10/2022;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL SAINT-CHARLES;75 Boulevard De La Grotte;65100;LOURDES;http://hotelstcharles-lourdes.com;-;46;24;-;-;-;non
-10/03/2021;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL SAINT-CHARLES;Chemin des Crueux;73480;LANSLEBOURG-MONT-CENIS;https://www.hotel-saintcharles.com/;-;278;84;-;-;-;oui
+15/04/2026;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL SAINT-CHARLES;Chemin des Crueux;73480;LANSLEBOURG-MONT-CENIS;https://www.hotel-saintcharles.com/;-;304;82;-;-;-;non
 09/01/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL SAINT-CLAIR;34 Boulevard du gave;65100;LOURDES;http://www.hotel-st-clair.com/;-;70;26;-;-;-;non
 10/04/2024;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL SAINT-CLAIR COTÉ PLAGE;avenue de l'Europe;34280;LA GRANDE-MOTTE;http://www.hotelsaintclair.com/;-;68;27;-;-;-;non
 05/05/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL SAINT-CYR ÉTOILE;101 Avenue des ternes;75017;PARIS 17E ARRONDISSEMENT;https://www.hotelstcyr-paris.com/;-;64;30;-;-;-;non
@@ -17659,7 +17671,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 05/08/2024;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL SAINTE VICTOIRE;33 avenue des Maquisards;13126;VAUVENARGUES;https://www.hotelsaintevictoire.com/fr/;-;30;15;-;-;-;non
 04/01/2024;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL SAINTE-BEUVE;9 rue Sainte-Beuve;75006;PARIS;http://www.hotelsaintebeuve.com;-;44;22;-;-;-;non
 31/10/2025;HÔTEL DE TOURISME;1 étoile;-;-;HÔTEL SAINTE-MARIE;6 Rue de la ville Neuve;75002;PARIS;https://hotelmarie.fr/;-;38;20;-;-;-;non
-30/01/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL SALVIA;16 rue Cujas;75005;PARIS 5E ARRONDISSEMENT;https://www.hotelsalviaparis.com/;-;78;44;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL SALVIA;16 rue Cujas;75005;PARIS 5E ARRONDISSEMENT;https://www.hotelsalviaparis.com/;-;78;39;-;-;-;non
 27/05/2025;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL SALÉA;ZA Les Gentelleries;44210;PORNIC;https://www.hotel-salea-pornic.com;-;70;29;-;-;-;non
 23/12/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL SAMPIERO;route nationale 93, avenue Sampiero Corsu;20600;BASTIA;https://www.hotel-sampiero.fr/;-;75;35;-;-;-;non
 25/07/2022;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL SAMPIERO CORSO;4 avenue du président pierucci;20250;CORTE;http://sampierocorso.com;-;58;31;-;-;-;non
@@ -17717,7 +17729,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 07/05/2025;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL SINGULIER BORDEAUX;12 rue Toulouse Lautrec;33000;BORDEAUX;https://hotelsingulierbordeaux.com/;-;14;7;-;-;-;non
 31/10/2025;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL SIXTEEN PARIS MONTROUGE;16 place Jean Jaurès;92120;MONTROUGE;https://www.hotelsixteen.com/;-;66;34;-;-;-;non
 05/04/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL SKI LODGE;RUE DU PRARIOND;73150;VAL-D'ISÈRE;https://www.village-montana.com/fr/hebergement-val-disere/hotel-ski-lodge.html?idtypeprestation=2;-;101;41;-;-;-;non
-31/03/2021;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL SKYLINE @ THE LEADERSHIP UNIVERSITY;10 rue Franz Josef Strauss;31700;BLAGNAC;https://www.hrs.com/fr/hotel/skylineleadership-university/a-871247;-;298;149;-;-;-;oui
+15/04/2026;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL SKYLINE @ THE LEADERSHIP UNIVERSITY;10 rue Franz Josef Strauss;31700;BLAGNAC;https://www.hrs.com/fr/hotel/skylineleadership-university/a-871247;-;147;147;-;-;-;non
 12/01/2023;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL SLEEPING BELLE;234 Rue de Bercy;75012;PARIS 12E ARRONDISSEMENT;https://www.hotelsleepingbelle.com/;-;70;36;-;-;-;non
 17/11/2021;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL SNOB PARIS;84-86 rue Saint-Denis;75001;PARIS 1ER ARRONDISSEMENT;https://snobhotelparis.com/fr/;-;48;24;-;-;-;non
 20/02/2025;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL SNOW CHILL;Rue Foret Blanche;05600;RISOUL;https://www.hotel-snowchill.com/;-;116;35;-;-;-;non
@@ -18176,7 +18188,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 30/01/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL VILLAGE MOTEL;19 rue des Lauriers;71700;TOURNUS;http://village-motel.com/;-;119;41;-;-;-;non
 16/11/2023;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL VILLAGE POMME CANNELLE;Morne Folie;97250;LE PRÊCHEUR;villagepommecannelle.com;-;76;22;-;-;-;non
 02/12/2022;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL VILLANCOURT;98 cours saint-André;38800;LE PONT-DE-CLAIX;http://www.villancourt.fr;-;74;35;-;-;-;non
-30/06/2021;HÔTEL DE TOURISME;5 étoiles;-;-;HÔTEL VILLAS FOCH;25 cours du Maréchal Foch;33000;BORDEAUX;https://www.villasfoch.fr/fr;-;40;20;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;5 étoiles;-;-;HÔTEL VILLAS FOCH;25 cours du Maréchal Foch;33000;BORDEAUX;https://www.villasfoch.fr/fr;-;43;20;-;-;-;non
 19/04/2024;HÔTEL DE TOURISME;3 étoiles;-;-;HÔTEL VILLATHÉNA;23 RUE D'ATHENES;75009;PARIS 9E ARRONDISSEMENT;https://villathena.com/;-;86;43;-;-;-;non
 10/07/2023;HÔTEL DE TOURISME;2 étoiles;-;-;HÔTEL VILLENOUVELLE;30 Rue Léon Cladel;82000;MONTAUBAN;https://hotel.villenouvelle.fr/;-;148;66;-;-;-;non
 23/06/2021;HÔTEL DE TOURISME;4 étoiles;-;-;HÔTEL VINCI DUE SAINT GERMAIN DES PRÈS;28 rue de Lille;75007;PARIS 7E ARRONDISSEMENT;https://www.hotelvincidue.com/;-;30;15;-;-;-;non
@@ -18698,7 +18710,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 16/10/2024;CAMPING;3 étoiles;TOURISME;-;MONTACABANA CAMPING;32 avenue Joinville le pont;33930;VENDAYS-MONTALIVET;https://montacabana.com/;-;255;-;85;-;-;non
 24/12/2024;RÉSIDENCE DE TOURISME;3 étoiles;-;-;MONTEMPO+ LYON CITE INTERNATIONALE;35 quai Charles de Gaulle;69006;LYON 6E ARRONDISSEMENT;https://www.montempo.fr/appart-hotels/lyon-cite-internationale/;-;318;-;-;104;-;non
 28/03/2022;HÔTEL DE TOURISME;3 étoiles;-;-;MOSAIK HÔTEL;56 boulevard Victor Hugo;64500;SAINT-JEAN-DE-LUZ;https://mosaikhotel.com/;-;49;22;-;-;-;non
-11/03/2026;HÔTEL DE TOURISME;2 étoiles;-;-;MOT HOTEL;17 RUE VICTOR BALTARD;77410;CLAYE-SOUILLY;https://mothotel.fr/;-;156;52;-;-;-;non
+15/04/2026;HÔTEL DE TOURISME;2 étoiles;-;-;MOT HOTEL;17 RUE VICTOR BALTARD;77410;CLAYE-SOUILLY;https://mothotel.fr/;-;156;52;-;-;-;non
 20/12/2022;HÔTEL DE TOURISME;3 étoiles;-;-;MOTEL 991;564 Route d'Aix;73420;VIVIERS-DU-LAC;https://www.motel-991.fr/;-;78;27;-;-;-;non
 12/08/2024;HÔTEL DE TOURISME;3 étoiles;-;-;MOTEL CAPSOL;446 Avenue de la Mer;06210;MANDELIEU-LA-NAPOULE;www.capsolmandelieu.fr;-;45;19;-;-;-;non
 09/10/2024;HÔTEL DE TOURISME;1 étoile;-;-;MOTEL ESTEREL;1625 avenue de Frejus;06210;MANDELIEU LA NAPOULE;https://motelesterel.wixsite.com/motelesterel;-;22;10;-;-;-;non
@@ -20495,6 +20507,7 @@ DATE DE CLASSEMENT;TYPOLOGIE ÉTABLISSEMENT;CLASSEMENT;CATÉGORIE;MENTION (villa
 16/11/2021;CAMPING;4 étoiles;LOISIRS;-;SARL CAMPING LA DUNE DE NORMANDIE;83 route de Cabourg;14810;MERVILLE-FRANCEVILLE-PLAGE;camping la dune de normandie;-;360;-;89;-;-;non
 24/10/2023;CAMPING;3 étoiles;LOISIRS;-;SARL CAMPING LE COURTIL ROSE;226 RUE DU WATERGANG;62610;BRÊMES;www.campinglecourtilrose.fr;-;255;-;85;-;-;non
 04/10/2023;CAMPING;2 étoiles;TOURISME;-;SARL CAMPING LES SOULINS;les soulins;58120;CORANCY;campinglessoulins.fr;-;129;-;43;-;-;non
+03/11/2022;CAMPING;3 étoiles;TOURISME;-;SARL CAMPING TERRADOS;7 route Saint-Préjet;48210;LES VIGNES;https://www.campingleterrados.fr/;-;195;-;65;-;-;non
 02/08/2023;CAMPING;2 étoiles;TOURISME;-;SARL GITES & CAMPING DE LA TÂCHERIE;La Tâcherie;12620;SAINT-BEAUZÉLY;www.camping-latacherie.net;-;120;-;40;-;-;non
 27/07/2023;HÔTEL DE TOURISME;3 étoiles;-;-;SARL H2R - HOTEL IMPERATOR;28 Allées Paul Riquet;34500;BÉZIERS;https://hotel-imperator.fr/;-;82;38;-;-;-;non
 06/11/2025;HÔTEL DE TOURISME;3 étoiles;-;-;SARL HOTEL DE LA POSTE;8-10 PLACE ZIEGLER;52200;LANGRES;https://hotel-de-la-poste.net/;-;44;22;-;-;-;non
