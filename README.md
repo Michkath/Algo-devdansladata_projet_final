@@ -17,11 +17,11 @@ collecte → nettoyage → stockage → API → visualisation.
 
 | Membre | Rôle |
 |---|---|
-| **Arike** | Collecte des données (scraping data.gouv.fr, ingestion MongoDB) |
-| **Goundo** | Nettoyage & transformation ETL (cleaning, normalisation) |
-| **Serkaan** | Tests & qualité (tests unitaires, tests d'intégration, SOLID) |
+| **Arike** | ETL et Tests |
+| **Goundo** | API REST (Flask) et Data Warehouse|
+| **Serkaan** | Power BI |
 | **Abdoulaye Camara** | Interface web (mini-site Flask/Jinja2, recherche, affichage) |
-| **Sajed** | Dashboard BI (Streamlit, Plotly), API REST (Flask), coordination |
+| **Sajed** | Dashboard BI (Streamlit, Plotly) |
 
 ---
 
