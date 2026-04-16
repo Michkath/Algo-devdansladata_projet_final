@@ -239,23 +239,18 @@ GET http://localhost:5000/hebergements?ville=Paris&type=hotel&page=1&per_page=20
 ## Dashboard BI — fonctionnalités
 
 ### Vue d'ensemble — tous les hébergements
-Vue globale du dashboard
 <img width="1919" height="968" alt="Image" src="https://github.com/user-attachments/assets/8948dc2d-8ea9-49e1-8069-7eb82470f77c" />
 
 ### Filtre par type — Hôtels uniquement
-Filtre Hôtels
 <img width="1919" height="862" alt="Image" src="https://github.com/user-attachments/assets/38de4bac-141d-4738-ad27-932d8d573137" />
 
 ### Cartographie — densité des hôtels 5 étoiles par département
-Carte choroplèthe 5 étoiles
 <img width="1912" height="856" alt="Image" src="https://github.com/user-attachments/assets/f7e2d869-a212-4571-9041-c79343ac2cd0" />
 
 ### Analyse croisée — capacité par type et par étoiles
-Analyse croisée
 <img width="1900" height="842" alt="Image" src="https://github.com/user-attachments/assets/1f68e9b7-4f15-4883-8564-3098c6777087" />
 
 ### Export CSV de la sélection
-Export CSV
 <img width="1919" height="1021" alt="Image" src="https://github.com/user-attachments/assets/ed201cbd-a149-4a24-a815-d3dec78f66a9" />
 
 
